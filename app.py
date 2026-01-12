@@ -94,8 +94,8 @@ with col2:
 # Inject CSS for row highlighting
 st.markdown("""
 <style>
-    .mandatory { color: #b91c1c; font-weight: bold; background-color: #fef2f2; padding: 2px 5px; border-radius: 4px; }
-    .optimal { color: #15803d; font-weight: bold; background-color: #f0fdf4; padding: 2px 5px; border-radius: 4px; }
+    .mandatory { color: #b91c1c; font-weight: bold;}
+    .optimal { color: #15803d; font-weight: bold;}
 </style>
 """, unsafe_allow_html=True)
 
