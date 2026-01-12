@@ -10,22 +10,31 @@ def load_data():
     with open('clinicalGoals_by_anatomical_sites.json', 'r') as f:
         return json.load(f)
 
+def clean_text_symbols(text):
+    """Replaces symbols and units in standard text (Notes column)."""
+    if not text:
+        return ""
+    # Replace symbols
+    text = text.replace("<=", "≤").replace(">=", "≥")
+    # Replace cm3/cc with proper superscript
+    text = text.replace("cm3", "cm³").replace("cc", "cm³")
+    return text
+
 def format_goal_latex(gs):
     """
-    Transforms strings into professional scientific notation.
+    Transforms goal strings into professional scientific notation.
     Moves units (Gy, %, cm3) into subscripts when attached to V or D.
     """
     if not gs:
         return ""
     
-    # 1. Remove text in parentheses (e.g., '(mandatory)', '(optimal)')
+    # 1. Remove text in parentheses (e.g., '(mandatory)')
     gs = re.sub(r'\(.*?\)', '', gs).strip()
     
     # 2. Normalize symbols for math mode
-    gs = gs.replace("<=", " \le ").replace(">=", " \ge ").replace("<", " < ").replace(">", " > ")
+    gs = gs.replace("<=", r" \le ").replace(">=", r" \ge ").replace("<", " < ").replace(">", " > ")
 
     # 3. Convert units to LaTeX style
-    # We use \text{} to keep units upright (non-italic) inside math mode
     gs = gs.replace("cm3", r"\text{ cm}^3").replace("cc", r"\text{ cm}^3")
     gs = gs.replace("%", r"\%")
     gs = gs.replace("Gy", r"\text{ Gy}")
@@ -44,7 +53,6 @@ def format_goal_latex(gs):
     # Catch any remaining V or D numbers without units that haven't been subscripted
     gs = re.sub(r'(?<!_)([VD])(\d+\.?\d*)', r'\1_{\2}', gs)
 
-    # Wrap the entire result in LaTeX tags
     return f"${gs}$"
 
 # --- APPLICATION START ---
@@ -61,11 +69,16 @@ st.markdown("---")
 # --- SIDEBAR FILTERS ---
 st.sidebar.header("Filter Criteria")
 
+# 1. Site Selection
 sites = sorted(list(data["treatmentSites"].keys()))
 selected_site = st.sidebar.selectbox("1. Treatment Site", sites)
 
-frac_types = list(data["treatmentSites"][selected_site]["fractionations"].keys())
-selected_type = st.sidebar.selectbox("2. Fractionation Type", frac_types)
+# 2. Fractionation Selection (Capitalized)
+frac_options = list(data["treatmentSites"][selected_site]["fractionations"].keys())
+# Map capitalized display names to the original keys
+frac_display_map = {f.capitalize(): f for f in frac_options}
+selected_frac_display = st.sidebar.selectbox("2. Fractionation Type", list(frac_display_map.keys()))
+selected_type = frac_display_map[selected_frac_display]
 
 path = data["treatmentSites"][selected_site]["fractionations"][selected_type]
 
@@ -77,6 +90,7 @@ if selected_type == "hypofractionated":
 else:
     goal_sets = path["clinicalGoalSets"]
 
+# 4. Publication Selection
 goal_set_names = [gs["name"] for gs in goal_sets]
 selected_gs_name = st.sidebar.selectbox("4. Publication Reference", goal_set_names)
 current_goal_set = next(gs for gs in goal_sets if gs["name"] == selected_gs_name)
@@ -91,11 +105,10 @@ with col2:
     st.metric("Constraints", len(current_goal_set["goals"]))
 
 # --- TABLE DISPLAY ---
-# Inject CSS for row highlighting
 st.markdown("""
 <style>
-    .mandatory { color: #b91c1c; font-weight: bold;}
-    .optimal { color: #15803d; font-weight: bold;}
+    .mandatory { color: #b91c1c; font-weight: bold; background-color: #fef2f2; padding: 2px 5px; border-radius: 4px; border: 1px solid #fee2e2; }
+    .optimal { color: #15803d; font-weight: bold; background-color: #f0fdf4; padding: 2px 5px; border-radius: 4px; border: 1px solid #dcfce7; }
 </style>
 """, unsafe_allow_html=True)
 
@@ -115,10 +128,12 @@ for g in current_goal_set["goals"]:
     else:
         priority = "---"
         
-    notes = g['notes'] if g['notes'] else ""
+    # Clean up symbols and units in Notes
+    notes = clean_text_symbols(g['notes'])
+    
     markdown_table += f"| {roi} | {goal} | {priority} | {notes} |\n"
 
 st.markdown(markdown_table, unsafe_allow_html=True)
 
 st.divider()
-st.caption("Scientific notation generated automatically via LaTeX.")
+st.caption("UI version 1.2: Fixed text symbols and capitalization.")
