@@ -107,8 +107,8 @@ with col2:
 # --- TABLE DISPLAY ---
 st.markdown("""
 <style>
-    .mandatory { color: #b91c1c; font-weight: bold; background-color: #fef2f2; padding: 2px 5px; border-radius: 4px; border: 1px solid #fee2e2; }
-    .optimal { color: #15803d; font-weight: bold; background-color: #f0fdf4; padding: 2px 5px; border-radius: 4px; border: 1px solid #dcfce7; }
+    .mandatory { color: #b91c1c; font-weight: bold; }
+    .optimal { color: #15803d; font-weight: bold; }
 </style>
 """, unsafe_allow_html=True)
 
