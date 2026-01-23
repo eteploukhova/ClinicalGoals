@@ -1,8 +1,8 @@
 {
-  "treatmentSites": {
-    "Abdomen": {
-      "fractionations": {
-        "conventional": {
+  "treatmentSites":   {
+    "Abdomen":     {
+      "fractionations":       {
+        "conventional":         {
           "clinicalGoalSets": [
             {
               "name": "CORSAIR - Conventional - Abdomen",
@@ -87,8 +87,8 @@
             }
           ]
         },
-        "hypofractionated": {
-          "1": {
+        "hypofractionated":         {
+          "1":           {
             "clinicalGoalSets": [
               {
                 "name": "CORSAIR - 1 Fraction - Abdomen",
@@ -224,7 +224,7 @@
               }
             ]
           },
-          "2": {
+          "2":           {
             "clinicalGoalSets": [
               {
                 "name": "Timmerman Tables - 2 Fractions - Abdomen",
@@ -278,7 +278,7 @@
               }
             ]
           },
-          "3": {
+          "3":           {
             "clinicalGoalSets": [
               {
                 "name": "CORSAIR - 3 Fractions - Abdomen",
@@ -423,10 +423,37 @@
                   {"roi": "Stomach", "goalType": "Dx", "dose": 16.5, "volume": 10, "volumeUnits": "cc", "operator": "LESSTHAN", "useEQD2": false, "priority": "mandatory", "goal_str": "D10cc < 16.5 Gy", "notes": ""},
                   {"roi": "Stomach", "goalType": "Dx", "dose": 22.2, "volume": 0.1, "volumeUnits": "cc", "operator": "LESSTHAN", "useEQD2": false, "priority": "mandatory", "goal_str": "D0.1cc < 22.2 Gy", "notes": ""}
                 ]
+              },
+              {
+                "name": "ASTRO 2025 - Liver SBRT 3fx",
+                "doi": "10.1016/j.prro.2025.11.003",
+                "goals": [
+                  {"roi": "Chestwall", "goalType": "Dx", "dose": 50, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.03cc <= 50 Gy", "notes": ""},
+                  {"roi": "Chestwall", "goalType": "Dx", "dose": 40, "volume": 5, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D5cc <= 40 Gy", "notes": ""},
+                  {"roi": "Chestwall", "goalType": "Dx", "dose": 30, "volume": 30, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "DD30cc <= 30 Gy", "notes": ""},
+                  {"roi": "Duodenum", "goalType": "Dx", "dose": 22, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.03cc <= 22 Gy", "notes": ""},
+                  {"roi": "Duodenum", "goalType": "Dx", "dose": 16.5, "volume": 5, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D5cc <= 16.5 Gy", "notes": ""},
+                  {"roi": "Esophagus", "goalType": "Dx", "dose": 27, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.03cc <= 27 Gy", "notes": ""},
+                  {"roi": "Heart", "goalType": "Dx", "dose": 30, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.03cc <= 30 Gy", "notes": ""},
+                  {"roi": "Heart", "goalType": "Dx", "dose": 24, "volume": 15, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D15cc <= 24 Gy", "notes": ""},
+                  {"roi": "Kidneys", "goalType": "Dmean", "dose": 8, "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "Dmean <= 8 Gy", "notes": ""},
+                  {"roi": "Large Bowel", "goalType": "Dx", "dose": 24, "volume": 20, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D20cc <= 24 Gy", "notes": ""},
+                  {"roi": "Large Bowel", "goalType": "Dx", "dose": 28, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.03cc <= 28 Gy", "notes": ""},
+                  {"roi": "Liver", "goalType": "Dx", "dose": 19, "volume": 700, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D>=700cc < 19 Gy", "notes": "Non-cirrhotic. Critical Volume."},
+                  {"roi": "Liver", "goalType": "Dmean", "dose": 12, "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "Dmean <= 12 Gy", "notes": "Non-cirrhotic"},
+                  {"roi": "Liver", "goalType": "Dmean", "dose": 15, "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "Dmean <= 15 Gy", "notes": "Non-cirrhotic"},
+                  {"roi": "Liver", "goalType": "Dmean", "dose": 10, "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "Dmean <= 10 Gy", "notes": "CP class A"},
+                  {"roi": "Liver", "goalType": "Dmean", "dose": 12, "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "Dmean <= 12 Gy", "notes": "CP class A"},
+                  {"roi": "Small Bowel", "goalType": "Dx", "dose": 25, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.03cc <= 25 Gy", "notes": ""},
+                  {"roi": "Small Bowel", "goalType": "Dx", "dose": 18, "volume": 5, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D5cc <= 18 Gy", "notes": ""},
+                  {"roi": "Spinal Canal", "goalType": "Dx", "dose": 22.5, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.03cc <= 22.5 Gy", "notes": ""},
+                  {"roi": "Stomach", "goalType": "Dx", "dose": 22, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.03cc <= 22 Gy", "notes": ""},
+                  {"roi": "Stomach", "goalType": "Dx", "dose": 16.5, "volume": 10, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D10cc <= 16.5 Gy", "notes": ""}
+                ]
               }
             ]
           },
-          "4": {
+          "4":           {
             "clinicalGoalSets": [
               {
                 "name": "Timmerman Tables - 4 Fractions - Abdomen",
@@ -473,7 +500,7 @@
               }
             ]
           },
-          "5": {
+          "5":           {
             "clinicalGoalSets": [
               {
                 "name": "CORSAIR - 5 Fractions - Abdomen",
@@ -561,7 +588,7 @@
                   {"roi": "Spinal Cord and medulla", "goalType": "Dx", "dose": 28, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHAN", "useEQD2": false, "priority": "", "goal_str": "DMAX < 28 Gy", "notes": "Myelitis"},
                   {"roi": "Stomach", "goalType": "Dx", "dose": 26.5, "volume": 5, "volumeUnits": "cc", "operator": "LESSTHAN", "useEQD2": false, "priority": "", "goal_str": "D5 cc < 26.5 Gy", "notes": "Ulceration/fistula"},
                   {"roi": "Stomach", "goalType": "Dx", "dose": 35, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHAN", "useEQD2": false, "priority": "", "goal_str": "DMAX < 35 Gy", "notes": "Ulceration/fistula"},
-                  {"roi": "Ureters", "goalType": "Dx", "dose": 45, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHAN", "useEQD2": false, "priority": "", "goal_str": "DMAX < 45 Gy", "notes": "Stenosis"}
+                    {"roi": "Ureters", "goalType": "Dx", "dose": 45, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHAN", "useEQD2": false, "priority": "", "goal_str": "DMAX < 45 Gy", "notes": "Stenosis"}
                 ]
               },
               {
@@ -633,10 +660,41 @@
                   {"roi": "Stomach", "goalType": "Dx", "dose": 25, "volume": 10, "volumeUnits": "cc", "operator": "LESSTHAN", "useEQD2": false, "priority": "optimal", "goal_str": "D10cc < 25 Gy", "notes": ""},
                   {"roi": "Stomach", "goalType": "Dx", "dose": 12, "volume": 50, "volumeUnits": "cc", "operator": "LESSTHAN", "useEQD2": false, "priority": "optimal", "goal_str": "D50cc < 12 Gy", "notes": ""}
                 ]
+              },
+              {
+                "name": "ASTRO 2025 - Liver SBRT 5fx",
+                "doi": "10.1016/j.prro.2025.11.003",
+                "goals": [
+                  {"roi": "Chestwall", "goalType": "Dx", "dose": 57, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.03cc <= 57 Gy", "notes": ""},
+                  {"roi": "Chestwall", "goalType": "Vx", "dose": 30, "volume": 70, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "V30Gy <= 30 cc", "notes": ""},
+                  {"roi": "Chestwall", "goalType": "Vx", "dose": 30, "volume": 30, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "V30Gy <= 70 cc", "notes": ""},
+                  {"roi": "Duodenum", "goalType": "Dx", "dose": 30, "volume": 0.5, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.5cc <= 30 Gy", "notes": ""},
+                  {"roi": "Duodenum", "goalType": "Dx", "dose": 25, "volume": 5, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D5cc <= 25 Gy", "notes": ""},
+                  {"roi": "Esophagus", "goalType": "Dx", "dose": 32, "volume": 0.5, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.5cc <= 32 Gy", "notes": ""},
+                  {"roi": "Heart", "goalType": "Dx", "dose": 52.5, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.03cc <= 52.5 Gy", "notes": ""},
+                  {"roi": "Heart", "goalType": "Dx", "dose": 30, "volume": 30, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D30cc <= 30 Gy", "notes": ""},
+                  {"roi": "Kidneys", "goalType": "Dmean", "dose": 10, "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "Dmean <= 10 Gy", "notes": ""},
+                  {"roi": "Large Bowel", "goalType": "Dx", "dose": 32, "volume": 0.5, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D0.5cc <= 32 Gy", "notes": ""},
+                  {"roi": "Large Bowel", "goalType": "Dx", "dose": 34, "volume": 0.5, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.5cc <= 34 Gy", "notes": ""},
+                  {"roi": "Liver", "goalType": "Dx", "dose": 21, "volume": 700, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D>=700cc < 21 Gy", "notes": "Non-cirrhotic. Critical Volume"},
+                  {"roi": "Liver", "goalType": "Dmean", "dose": 15, "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "Dmean <= 15 Gy", "notes": "Non-cirrhotic"},
+                  {"roi": "Liver", "goalType": "Dmean", "dose": 18, "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "Dmean <= 18 Gy", "notes": "Non-cirrhotic"},
+                  {"roi": "Liver", "goalType": "Dx", "dose": 10, "volume": 500, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D>=500cc < 10 Gy", "notes": "CP class B. Critical Volume"},
+                  {"roi": "Liver", "goalType": "Dmean", "dose": 8, "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "Dmean <= 8 Gy", "notes": "CP class B"},
+                  {"roi": "Liver", "goalType": "Dmean", "dose": 10, "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "Dmean <= 10 Gy", "notes": "CP class B"},
+                  {"roi": "Liver", "goalType": "Dx", "dose": 15, "volume": 700, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D>=700cc < 15 Gy", "notes": "CP class A. Critical Volume"},
+                  {"roi": "Liver", "goalType": "Dmean", "dose": 13, "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "Dmean <= 13 Gy", "notes": "CP class A"},
+                  {"roi": "Liver", "goalType": "Dmean", "dose": 15, "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "Dmean <= 15 Gy", "notes": "CP class A"},
+                  {"roi": "Small Bowel", "goalType": "Dx", "dose": 30, "volume": 0.5, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.5cc <= 30 Gy", "notes": ""},
+                  {"roi": "Small Bowel", "goalType": "Dx", "dose": 25, "volume": 5, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D5cc <= 25 Gy", "notes": ""},
+                  {"roi": "Spinal Canal", "goalType": "Dx", "dose": 25, "volume": 0.5, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.5cc <= 25 Gy", "notes": ""},
+                  {"roi": "Stomach", "goalType": "Dx", "dose": 30, "volume": 0.5, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.5cc <= 30 Gy", "notes": ""},
+                  {"roi": "Stomach", "goalType": "Dx", "dose": 25, "volume": 5, "volumeUnits": "cc", "operator": "LESSTHAN", "priority": "mandatory", "goal_str": "D5cc < 25 Gy", "notes": ""}
+                ]
               }
             ]
           },
-          "6": {
+          "6":           {
             "clinicalGoalSets": [
               {
                 "name": "HyTEC 2021 - 6 Fractions - Abdomen",
@@ -650,7 +708,7 @@
               }
             ]
           },
-          "8": {
+          "8":           {
             "clinicalGoalSets": [
               {
                 "name": "CORSAIR - 8 Fractions - Abdomen",
@@ -708,7 +766,7 @@
               }
             ]
           },
-          "10": {
+          "10":           {
             "clinicalGoalSets": [
               {
                 "name": "Timmerman Tables - 10 Fractions - Abdomen",
@@ -739,7 +797,7 @@
               }
             ]
           },
-          "15": {
+          "15":           {
             "clinicalGoalSets": [
               {
                 "name": "Timmerman Tables - 15 Fractions - Abdomen",
@@ -767,10 +825,34 @@
                   {"roi": "Stomach", "goalType": "Dx", "dose": 39, "volume": 50, "volumeUnits": "cc", "operator": "LESSTHAN", "useEQD2": false, "priority": "", "goal_str": "D50 cc < 39 Gy", "notes": "Ulceration/fistula"},
                   {"roi": "Stomach", "goalType": "Dx", "dose": 51, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHAN", "useEQD2": false, "priority": "", "goal_str": "DMAX < 51 Gy", "notes": "Ulceration/fistula"}
                 ]
+              },
+              {
+                "name": "ASTRO 2025 - Liver (Mod Hypo 15fx)",
+                "doi": "10.1016/j.prro.2025.11.003",
+                "goals": [
+                  {"roi": "Chestwall", "goalType": "Dx", "dose": 60, "volume": 10, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D10cc <= 60 Gy", "notes": ""},
+                  {"roi": "Chestwall", "goalType": "Dx", "dose": 45, "volume": 20, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D20cc <= 45 Gy", "notes": ""},
+                  {"roi": "Chestwall", "goalType": "Dx", "dose": 40, "volume": 150, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D150cc <= 40 Gy", "notes": ""},
+                  {"roi": "Duodenum", "goalType": "Dx", "dose": 45, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D0.03cc <= 45 Gy", "notes": ""},
+                  {"roi": "Esophagus", "goalType": "Dx", "dose": 40, "volume": 0.5, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D0.5cc <= 40 Gy", "notes": ""},
+                  {"roi": "Esophagus", "goalType": "Dx", "dose": 45, "volume": 0.5, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.5cc <= 45 Gy", "notes": ""},
+                  {"roi": "Heart", "goalType": "Dx", "dose": 45, "volume": 30, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D30cc <= 45 Gy", "notes": ""},
+                  {"roi": "Kidneys", "goalType": "Vx", "dose": 18, "volume": 30, "volumeUnits": "%", "operator": "LESSTHAN", "priority": "optimal", "goal_str": "V18Gy < 30%", "notes": ""},
+                  {"roi": "Kidneys", "goalType": "Vx", "dose": 18, "volume": 32, "volumeUnits": "%", "operator": "LESSTHAN", "priority": "mandatory", "goal_str": "V18Gy < 32%", "notes": ""},
+                  {"roi": "Large Bowel", "goalType": "Dx", "dose": 45, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D0.03cc <= 45 Gy", "notes": ""},
+                  {"roi": "Liver", "goalType": "Dmean", "dose": 24, "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "Dmean <= 24 Gy", "notes": "Non-cirrhotic"},
+                  {"roi": "Liver", "goalType": "Dmean", "dose": 16, "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "Dmean <= 16 Gy", "notes": "CP class B"},
+                  {"roi": "Liver", "goalType": "Dmean", "dose": 20, "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "Dmean <= 20 Gy", "notes": "CP class A"},
+                  {"roi": "Small Bowel", "goalType": "Dx", "dose": 45, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D0.03cc <= 45 Gy", "notes": ""},
+                  {"roi": "Spinal Canal", "goalType": "Dx", "dose": 30, "volume": 0.5, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D0.5cc <= 30 Gy", "notes": ""},
+                  {"roi": "Spinal Canal", "goalType": "Dx", "dose": 35, "volume": 0.5, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.5cc <= 35 Gy", "notes": ""},
+                  {"roi": "Stomach", "goalType": "Dx", "dose": 42, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D0.03cc <= 42 Gy", "notes": ""},
+                  {"roi": "Stomach", "goalType": "Dx", "dose": 45, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.03cc <= 45 Gy", "notes": ""}
+                ]
               }
             ]
           },
-          "20": {
+          "20":           {
             "clinicalGoalSets": [
               {
                 "name": "Timmerman Tables - 20 Fractions - Abdomen",
@@ -804,9 +886,9 @@
         }
       }
     },
-    "Brain": {
-      "fractionations": {
-        "conventional": {
+    "Brain":     {
+      "fractionations":       {
+        "conventional":         {
           "clinicalGoalSets": [
             {
               "name": "CORSAIR - Conventional - Brain",
@@ -860,8 +942,8 @@
             }
           ]
         },
-        "hypofractionated": {
-          "1": {
+        "hypofractionated":         {
+          "1":           {
             "clinicalGoalSets": [
               {
                 "name": "CORSAIR - 1 Fraction - Brain",
@@ -929,7 +1011,7 @@
               }
             ]
           },
-          "2": {
+          "2":           {
             "clinicalGoalSets": [
               {
                 "name": "Timmerman Tables - 2 Fractions - Brain",
@@ -945,7 +1027,7 @@
               }
             ]
           },
-          "3": {
+          "3":           {
             "clinicalGoalSets": [
               {
                 "name": "CORSAIR - 3 Fractions - Brain",
@@ -1009,7 +1091,7 @@
               }
             ]
           },
-          "4": {
+          "4":           {
             "clinicalGoalSets": [
               {
                 "name": "Timmerman Tables - 4 Fractions - Brain",
@@ -1025,7 +1107,7 @@
               }
             ]
           },
-          "5": {
+          "5":           {
             "clinicalGoalSets": [
               {
                 "name": "CORSAIR - 5 Fractions - Brain",
@@ -1088,7 +1170,7 @@
               }
             ]
           },
-          "8": {
+          "8":           {
             "clinicalGoalSets": [
               {
                 "name": "CORSAIR - 8 Fractions - Brain",
@@ -1114,7 +1196,7 @@
               }
             ]
           },
-          "10": {
+          "10":           {
             "clinicalGoalSets": [
               {
                 "name": "Timmerman Tables - 10 Fractions - Brain",
@@ -1130,7 +1212,7 @@
               }
             ]
           },
-          "15": {
+          "15":           {
             "clinicalGoalSets": [
               {
                 "name": "Timmerman Tables - 15 Fractions - Brain",
@@ -1146,7 +1228,7 @@
               }
             ]
           },
-          "20": {
+          "20":           {
             "clinicalGoalSets": [
               {
                 "name": "Timmerman Tables - 20 Fractions - Brain",
@@ -1165,9 +1247,9 @@
         }
       }
     },
-    "Chest": {
-      "fractionations": {
-        "conventional": {
+    "Chest":     {
+      "fractionations":       {
+        "conventional":         {
           "clinicalGoalSets": [
             {
               "name": "CORSAIR - Conventional - Chest",
@@ -1227,11 +1309,67 @@
                 {"roi": "Trachea and large bronchus", "goalType": "Dx", "dose": 60, "volume": 5, "volumeUnits": "cc", "operator": "LESSTHAN", "useEQD2": false, "priority": "", "goal_str": "D5 cc < 60 Gy", "notes": "Impairment of pulmonary toilet"},
                 {"roi": "Trachea and large bronchus", "goalType": "Dx", "dose": 69, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHAN", "useEQD2": false, "priority": "", "goal_str": "DMAX < 69 Gy", "notes": "Impairment of pulmonary toilet"}
               ]
+            },
+            {
+              "name": "ASTRO 2025 - Lung (Conv)",
+              "doi": "10.1016/j.prro.2025.11.003",
+              "goals": [
+                {"roi": "Brachial Plexus", "goalType": "Dx", "dose": 66, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D0.03cc <= 66 Gy", "notes": ""},
+                {"roi": "Brachial Plexus", "goalType": "Dx", "dose": 70, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.03cc <= 70 Gy", "notes": ""},
+                {"roi": "Esophagus", "goalType": "Dx", "dose": 73.5, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D0.03cc <= 105%", "notes": ""},
+                {"roi": "Esophagus", "goalType": "Dx", "dose": 74, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.03cc <= 74 Gy", "notes": ""},
+                {"roi": "Esophagus", "goalType": "Vx", "dose": 60, "volume": 15.3, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "V60Gy <= 15.3%", "notes": ""},
+                {"roi": "Esophagus", "goalType": "Vx", "dose": 60, "volume": 17, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "V60Gy <= 17%", "notes": ""},
+                {"roi": "Esophagus", "goalType": "Dmean", "dose": 30.6, "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "Dmean <= 30.6 Gy", "notes": ""},
+                {"roi": "Esophagus", "goalType": "Dmean", "dose": 34, "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "Dmean <= 34 Gy", "notes": ""},
+                {"roi": "Heart", "goalType": "Vx", "dose": 45, "volume": 35, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "V45Gy <= 35%", "notes": ""},
+                {"roi": "Heart", "goalType": "Vx", "dose": 45, "volume": 40, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "V45Gy <= 40%", "notes": ""},
+                {"roi": "Lung", "goalType": "Dmean", "dose": 7.7, "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "Dmean <= 7.7 Gy", "notes": "Only one lung present. Lung - GTV"},
+                {"roi": "Lung", "goalType": "Dmean", "dose": 8.5, "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "Dmean <= 8.5 Gy", "notes": "Only one lung present. Lung - GTV"},
+                {"roi": "Lung", "goalType": "Vx", "dose": 20, "volume": 6.3, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "V20Gy <= 6.3%", "notes": "Only one lung present. Lung - GTV"},
+                {"roi": "Lung", "goalType": "Vx", "dose": 20, "volume": 7, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "V20Gy <= 7%", "notes": "Only one lung present. Lung - GTV"},
+                {"roi": "Lung", "goalType": "Vx", "dose": 5, "volume": 42, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "V5Gy <= 42%", "notes": "Only one lung present. Lung - GTV"},
+                {"roi": "Lung", "goalType": "Vx", "dose": 5, "volume": 60, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "V5Gy <= 60%", "notes": "Only one lung present. Lung - GTV"},
+                {"roi": "Lungs", "goalType": "Dmean", "dose": 18, "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "Dmean <= 18 Gy", "notes": "Total Lung - GTV"},
+                {"roi": "Lungs", "goalType": "Dmean", "dose": 22, "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "Dmean <= 22 Gy", "notes": "Total Lungs - GTV"},
+                {"roi": "Lungs", "goalType": "Vx", "dose": 20, "volume": 33, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "V20Gy <= 33%", "notes": "Total Lung - GTV"},
+                {"roi": "Lungs", "goalType": "Vx", "dose": 20, "volume": 37, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "V20Gy <= 37%", "notes": "Total Lung - GTV"},
+                {"roi": "Lungs", "goalType": "Vx", "dose": 5, "volume": 60, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "V5Gy <= 60%", "notes": "Total Lung - GTV"},
+                {"roi": "Lungs", "goalType": "Vx", "dose": 5, "volume": 70, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "V5Gy <= 70%", "notes": "Total Lung - GTV"},
+                {"roi": "Spinal Canal", "goalType": "Dx", "dose": 50.5, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D0.03cc <= 50.5 Gy", "notes": ""},
+                {"roi": "Spinal Canal", "goalType": "Dx", "dose": 52, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.03cc <= 52 Gy", "notes": ""}
+              ]
+            },
+            {
+              "name": "ASTRO 2025 - Breast/chest wall with lymph nodes (Conv)",
+              "doi": "10.1016/j.prro.2025.11.003",
+              "goals": [
+                {"roi": "Breast", "goalType": "Dx", "dose": 3, "volume": 10, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D10% <= 3 Gy", "notes": "Contralateral. Left/Right"},
+                {"roi": "Breast", "goalType": "Dx", "dose": 5, "volume": 10, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D10% <= 5 Gy", "notes": "Contralateral. Left/Right"},
+                {"roi": "Chestwall", "goalType": "Dx", "dose": 55.4, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D0.03cc <= 110%", "notes": ""},
+                {"roi": "Chestwall", "goalType": "Dx", "dose": 58, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.03cc <= 115%", "notes": ""},
+                {"roi": "Heart", "goalType": "Dmean", "dose": 4, "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "Dmean <= 4 Gy", "notes": "Left-sided"},
+                {"roi": "Heart", "goalType": "Dmean", "dose": 5, "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "Dmean <= 5 Gy", "notes": "Left-sided"},
+                {"roi": "Heart", "goalType": "Dmean", "dose": 2, "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "Dmean <= 2 Gy", "notes": "Right-sided"},
+                {"roi": "Heart", "goalType": "Dmean", "dose": 3, "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "Dmean <= 3 Gy", "notes": "Right-sided"},
+                {"roi": "LN_Ax", "goalType": "Dx", "dose": 55.4, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D0.03cc <= 110%", "notes": ""},
+                {"roi": "LN_Ax", "goalType": "Dx", "dose": 58, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.03cc <= 115%", "notes": ""},
+                {"roi": "LN_IMN", "goalType": "Dx", "dose": 55.4, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D0.03cc <= 110%", "notes": ""},
+                {"roi": "LN_IMN", "goalType": "Dx", "dose": 58, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.03cc <= 115%", "notes": ""},
+                {"roi": "LN_Sclav", "goalType": "Dx", "dose": 55.4, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D0.03cc <= 110%", "notes": ""},
+                {"roi": "LN_Sclav", "goalType": "Dx", "dose": 58, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.03cc <= 115%", "notes": ""},
+                {"roi": "Lung", "goalType": "Vx", "dose": 5, "volume": 15, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "V5Gy <= 15%", "notes": "Contralateral"},
+                {"roi": "Lung", "goalType": "Vx", "dose": 20, "volume": 35, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "V20Gy <= 35%", "notes": "Ipsilateral"},
+                {"roi": "Lung", "goalType": "Vx", "dose": 20, "volume": 40, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "V20Gy <= 40%", "notes": "Ipsilateral"},
+                {"roi": "Lung", "goalType": "Vx", "dose": 10, "volume": 65, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "V10Gy <= 65%", "notes": "Ipsilateral"},
+                {"roi": "Spinal Cord", "goalType": "Dx", "dose": 45, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D0.03cc <= 45 Gy", "notes": ""},
+                {"roi": "Spinal Cord", "goalType": "Dx", "dose": 50, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.03cc <= 50 Gy", "notes": ""}
+              ]
             }
           ]
         },
-        "hypofractionated": {
-          "1": {
+        "hypofractionated":         {
+          "1":           {
             "clinicalGoalSets": [
               {
                 "name": "CORSAIR - 1 Fraction - Chest",
@@ -1364,10 +1502,35 @@
                   {"roi": "Spinal Cord PRV", "goalType": "Dx", "dose": 14, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHAN", "useEQD2": false, "priority": "mandatory", "goal_str": "D0.035cc < 14 Gy", "notes": "Vertebral lesions"},
                   {"roi": "Trachea", "goalType": "Dx", "dose": 20.2, "volume": 0.1, "volumeUnits": "cc", "operator": "LESSTHAN", "useEQD2": false, "priority": "mandatory", "goal_str": "D0.1cc < 20.2 Gy", "notes": ""}
                 ]
+              },
+              {
+                "name": "ASTRO 2025 - Lung SBRT 1fx",
+                "doi": "10.1016/j.prro.2025.11.003",
+                "goals": [
+                  {"roi": "Brachial Plexus", "goalType": "Dx", "dose": 16.4, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.035cc <= 16.4 Gy", "notes": ""},
+                  {"roi": "Chestwall", "goalType": "Dx", "dose": 30.2, "volume": 1, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D1cc <= 30.2 Gy", "notes": ""},
+                  {"roi": "Chestwall", "goalType": "Dx", "dose": 27.2, "volume": 5, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D5cc <= 27.2 Gy", "notes": ""},
+                  {"roi": "Esophagus", "goalType": "Dx", "dose": 15.4, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.035cc <= 15.4 Gy", "notes": ""},
+                  {"roi": "Esophagus", "goalType": "Dx", "dose": 11.9, "volume": 5, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D5cc <= 11.9 Gy", "notes": ""},
+                  {"roi": "Great Vessels", "goalType": "Dx", "dose": 37, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.035cc <= 37 Gy", "notes": ""},
+                  {"roi": "Heart", "goalType": "Dx", "dose": 22, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.035cc <= 22 Gy", "notes": ""},
+                  {"roi": "Heart", "goalType": "Dx", "dose": 16, "volume": 15, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D15cc <= 16 Gy", "notes": ""},
+                  {"roi": "Lungs", "goalType": "Vx", "dose": 8, "volume": 37, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "V8Gy <= 37%", "notes": ""},
+                  {"roi": "Proximal Bronchus", "goalType": "Dx", "dose": 20.2, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHAN", "priority": "mandatory", "goal_str": "D0.035cc < 20.2 Gy", "notes": "Bronchial tree/smaller airways"},
+                  {"roi": "Proximal Bronchus", "goalType": "Dx", "dose": 17.4, "volume": 0.5, "volumeUnits": "cc", "operator": "LESSTHAN", "priority": "mandatory", "goal_str": "D0.5cc < 17.4 Gy", "notes": "Bronchial tree/smaller airways"},
+                  {"roi": "Ribs", "goalType": "Dx", "dose": 30, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.035cc <= 30 Gy", "notes": ""},
+                  {"roi": "Ribs", "goalType": "Dx", "dose": 22, "volume": 1, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D1cc <= 22 Gy", "notes": ""},
+                  {"roi": "Skin", "goalType": "Dx", "dose": 26, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.035cc <= 26 Gy", "notes": ""},
+                  {"roi": "Skin", "goalType": "Dx", "dose": 23, "volume": 10, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D10cc <= 23 Gy", "notes": ""},
+                  {"roi": "Spinal Canal", "goalType": "Dx", "dose": 12.4, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D0.035cc <= 12.4 Gy", "notes": ""},
+                  {"roi": "Spinal Canal", "goalType": "Dx", "dose": 14, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.035cc <= 14 Gy", "notes": ""},
+                  {"roi": "Trachea and large bronchus", "goalType": "Dx", "dose": 20.2, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.035cc <= 20.2 Gy", "notes": ""},
+                  {"roi": "Trachea and large bronchus", "goalType": "Dx", "dose": 10.5, "volume": 4, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D4cc <= 10.5 Gy", "notes": ""}
+                ]
               }
             ]
           },
-          "2": {
+          "2":           {
             "clinicalGoalSets": [
               {
                 "name": "Timmerman Tables - 2 Fractions - Chest",
@@ -1419,7 +1582,7 @@
               }
             ]
           },
-          "3": {
+          "3":           {
             "clinicalGoalSets": [
               {
                 "name": "CORSAIR - 3 Fractions - Chest",
@@ -1564,10 +1727,39 @@
                   {"roi": "Spinal Cord PRV", "goalType": "Dx", "dose": 20.3, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHAN", "useEQD2": false, "priority": "mandatory", "goal_str": "D0.035cc < 20.3 Gy", "notes": "Vertebral lesions"},
                   {"roi": "Trachea", "goalType": "Dx", "dose": 30, "volume": 0.1, "volumeUnits": "cc", "operator": "LESSTHAN", "useEQD2": false, "priority": "mandatory", "goal_str": "D0.1cc < 30 Gy", "notes": ""}
                 ]
+              },
+              {
+                "name": "ASTRO 2025 - Lung SBRT 3fx",
+                "doi": "10.1016/j.prro.2025.11.003",
+                "goals": [
+                  {"roi": "Brachial Plexus", "goalType": "Dx", "dose": 24, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.035cc <= 24 Gy", "notes": ""},
+                  {"roi": "Chestwall", "goalType": "Dx", "dose": 50, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.035cc <= 50 Gy", "notes": ""},
+                  {"roi": "Chestwall", "goalType": "Vx", "dose": 30, "volume": 30, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "V30Gy <= 30 cc", "notes": ""},
+                  {"roi": "Chestwall", "goalType": "Vx", "dose": 30, "volume": 35, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "V30Gy <= 35 cc", "notes": ""},
+                  {"roi": "Esophagus", "goalType": "Dx", "dose": 27, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.035cc <= 27 Gy", "notes": ""},
+                  {"roi": "Esophagus", "goalType": "Dx", "dose": 17.7, "volume": 5, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D5cc <= 17.7 Gy", "notes": ""},
+                  {"roi": "Great Vessels", "goalType": "Dx", "dose": 45, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D0.035cc <= 45 Gy", "notes": ""},
+                  {"roi": "Heart", "goalType": "Dx", "dose": 30, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.035cc <= 30 Gy", "notes": ""},
+                  {"roi": "Heart", "goalType": "Dx", "dose": 24, "volume": 15, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D15cc <= 24 Gy", "notes": ""},
+                  {"roi": "Lungs", "goalType": "Vx", "dose": 20, "volume": 10, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "V20Gy <= 10%", "notes": ""},
+                  {"roi": "Lungs", "goalType": "Vx", "dose": 20, "volume": 15, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "V20Gy <= 15%", "notes": ""},
+                  {"roi": "Lungs", "goalType": "Dx", "dose": 11.6, "volume": 1500, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D>=1500cc < 11.6 Gy", "notes": ""},
+                  {"roi": "Lungs", "goalType": "Dx", "dose": 12.4, "volume": 1000, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D>=1000cc < 12.4 Gy", "notes": ""},
+                  {"roi": "Lungs", "goalType": "Dmean", "dose": 8, "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "Dmean <= 8 Gy", "notes": "Total Lungs - GTV"},
+                  {"roi": "Proximal Bronchus", "goalType": "Dx", "dose": 30, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.035cc <= 30 Gy", "notes": "Bronchial tree/smaller airways"},
+                  {"roi": "Proximal Bronchus", "goalType": "Dx", "dose": 40, "volume": 0.5, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.5cc <= 40 Gy", "notes": "Bronchial tree/smaller airways"},
+                  {"roi": "Ribs", "goalType": "Dx", "dose": 50, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.035cc <= 50 Gy", "notes": ""},
+                  {"roi": "Ribs", "goalType": "Dx", "dose": 40, "volume": 5, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D5cc <= 40 Gy", "notes": ""},
+                  {"roi": "Skin", "goalType": "Dx", "dose": 33, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D0.035cc <= 33 Gy", "notes": ""},
+                  {"roi": "Skin", "goalType": "Dx", "dose": 31, "volume": 10, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D10cc <= 31 Gy", "notes": ""},
+                  {"roi": "Spinal Canal", "goalType": "Dx", "dose": 20.3, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D0.035cc <= 20.3 Gy", "notes": ""},
+                  {"roi": "Trachea and large bronchus", "goalType": "Dx", "dose": 30, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.035cc <= 30 Gy", "notes": ""},
+                  {"roi": "Trachea and large bronchus", "goalType": "Dx", "dose": 15, "volume": 4, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D4cc <= 15 Gy", "notes": ""}
+                ]
               }
             ]
           },
-          "4": {
+          "4":           {
             "clinicalGoalSets": [
               {
                 "name": "Timmerman Tables - 4 Fractions - Chest",
@@ -1611,10 +1803,39 @@
                   {"roi": "Spinal Cord", "goalType": "Dx", "dose": 23, "volume": 0, "volumeUnits": "cc", "operator": "LESSTHAN", "useEQD2": false, "priority": "optimal", "goal_str": "DMAX < 23 Gy", "notes": "1% risk myelopathy"},
                   {"roi": "Spinal Cord", "goalType": "Dx", "dose": 26.2, "volume": 0, "volumeUnits": "cc", "operator": "LESSTHAN", "useEQD2": false, "priority": "mandatory", "goal_str": "DMAX < 26.2 Gy", "notes": "5% risk myelopathy"}
                 ]
+              },
+              {
+                "name": "ASTRO 2025 - Lung SBRT 4fx",
+                "doi": "10.1016/j.prro.2025.11.003",
+                "goals": [
+                  {"roi": "Brachial Plexus", "goalType": "Dx", "dose": 27.2, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.035cc <= 27.2 Gy", "notes": ""},
+                  {"roi": "Chestwall", "goalType": "Dx", "dose": 50, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D0.035cc <= 50 Gy", "notes": ""},
+                  {"roi": "Chestwall", "goalType": "Dx", "dose": 54, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.035cc <= 54 Gy", "notes": ""},
+                  {"roi": "Chestwall", "goalType": "Vx", "dose": 30, "volume": 30, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "V30Gy <= 30 cc", "notes": ""},
+                  {"roi": "Chestwall", "goalType": "Vx", "dose": 30, "volume": 35, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "V30Gy <= 35 cc", "notes": ""},
+                  {"roi": "Esophagus", "goalType": "Dx", "dose": 30, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.035cc <= 30 Gy", "notes": ""},
+                  {"roi": "Esophagus", "goalType": "Dx", "dose": 18.8, "volume": 5, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D5cc <= 18.8 Gy", "notes": ""},
+                  {"roi": "Great Vessels", "goalType": "Dx", "dose": 43, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D0.035cc <= 43 Gy", "notes": ""},
+                  {"roi": "Great Vessels", "goalType": "Dx", "dose": 49, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.035cc <= 49 Gy", "notes": ""},
+                  {"roi": "Heart", "goalType": "Dx", "dose": 34, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.035cc <= 34 Gy", "notes": ""},
+                  {"roi": "Heart", "goalType": "Dx", "dose": 28, "volume": 15, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D15cc <= 28 Gy", "notes": ""},
+                  {"roi": "Lungs", "goalType": "Vx", "dose": 20, "volume": 10, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "V20Gy <= 10%", "notes": ""},
+                  {"roi": "Lungs", "goalType": "Vx", "dose": 20, "volume": 15, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "V20Gy <= 15%", "notes": ""},
+                  {"roi": "Lungs", "goalType": "Dmean", "dose": 8, "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "Dmean <= 8 Gy", "notes": "Total Lungs - GTV"},
+                  {"roi": "Proximal Bronchus", "goalType": "Dx", "dose": 34.8, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.035cc <= 34.8 Gy", "notes": "Bronchial tree/smaller airways"},
+                  {"roi": "Proximal Bronchus", "goalType": "Dx", "dose": 28.8, "volume": 0.5, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.5cc <= 28.8 Gy", "notes": "Bronchial tree/smaller airways"},
+                  {"roi": "Ribs", "goalType": "Dx", "dose": 40, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.035cc <= 40 Gy", "notes": ""},
+                  {"roi": "Ribs", "goalType": "Dx", "dose": 32, "volume": 1, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D1cc <= 32 Gy", "notes": ""},
+                  {"roi": "Skin", "goalType": "Dx", "dose": 36, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.035cc <= 36 Gy", "notes": ""},
+                  {"roi": "Skin", "goalType": "Dx", "dose": 33.2, "volume": 10, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D10cc <= 33.2 Gy", "notes": ""},
+                  {"roi": "Spinal Canal", "goalType": "Dx", "dose": 24, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.035cc <= 24 Gy", "notes": ""},
+                  {"roi": "Trachea and large bronchus", "goalType": "Dx", "dose": 34.8, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.035cc <= 34.8 Gy", "notes": ""},
+                  {"roi": "Trachea and large bronchus", "goalType": "Dx", "dose": 15.6, "volume": 4, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D4cc <= 15.6 Gy", "notes": ""}
+                ]
               }
             ]
           },
-          "5": {
+          "5":           {
             "clinicalGoalSets": [
               {
                 "name": "CORSAIR - 5 Fractions - Chest",
@@ -1762,10 +1983,80 @@
                   {"roi": "Trachea", "goalType": "Dx", "dose": 35, "volume": 0.1, "volumeUnits": "cc", "operator": "LESSTHAN", "useEQD2": false, "priority": "optimal", "goal_str": "D0.1cc < 35 Gy", "notes": ""},
                   {"roi": "Trachea", "goalType": "Dx", "dose": 38, "volume": 0.1, "volumeUnits": "cc", "operator": "LESSTHAN", "useEQD2": false, "priority": "mandatory", "goal_str": "D0.1cc < 38 Gy", "notes": ""}
                 ]
+              },
+              {
+                "name": "ASTRO 2025 - Lung SBRT 5fx",
+                "doi": "10.1016/j.prro.2025.11.003",
+                "goals": [
+                  {"roi": "Brachial Plexus", "goalType": "Dx", "dose": 32, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D0.035cc <= 32 Gy", "notes": ""},
+                  {"roi": "Chestwall", "goalType": "Dx", "dose": 50, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D0.035cc <= 50 Gy", "notes": ""},
+                  {"roi": "Chestwall", "goalType": "Dx", "dose": 57, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.035cc <= 57 Gy", "notes": ""},
+                  {"roi": "Chestwall", "goalType": "Vx", "dose": 30, "volume": 30, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "V30Gy <= 30 cc", "notes": ""},
+                  {"roi": "Chestwall", "goalType": "Vx", "dose": 30, "volume": 70, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "V30Gy <= 70 cc", "notes": ""},
+                  {"roi": "Esophagus", "goalType": "Dx", "dose": 38, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D0.035cc <= 38 Gy", "notes": ""},
+                  {"roi": "Esophagus", "goalType": "Dx", "dose": 63, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.035cc <= 105%", "notes": ""},
+                  {"roi": "Esophagus", "goalType": "Dx", "dose": 19.5, "volume": 5, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D5cc <= 19.5 Gy", "notes": ""},
+                  {"roi": "Great Vessels", "goalType": "Dx", "dose": 63, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.035cc <= 105%", "notes": ""},
+                  {"roi": "Heart", "goalType": "Dx", "dose": 38, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D0.035cc <= 38 Gy", "notes": ""},
+                  {"roi": "Heart", "goalType": "Dx", "dose": 63, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.035cc <= 105%", "notes": ""},
+                  {"roi": "Heart", "goalType": "Dx", "dose": 32, "volume": 15, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D15cc <= 32 Gy", "notes": ""},
+                  {"roi": "Lungs", "goalType": "Vx", "dose": 20, "volume": 10, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "V20Gy <= 10%", "notes": ""},
+                  {"roi": "Lungs", "goalType": "Vx", "dose": 20, "volume": 15, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "V20Gy <= 15%", "notes": ""},
+                  {"roi": "Lungs", "goalType": "Dmean", "dose": 8, "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "Dmean <= 8 Gy", "notes": "Total Lungs - GTV"},
+                  {"roi": "Lungs", "goalType": "Dx", "dose": 12.5, "volume": 1500, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D>=1500cc < 12.5 Gy", "notes": ""},
+                  {"roi": "Lungs", "goalType": "Dx", "dose": 13.5, "volume": 1000, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D>=1000cc < 13.5 Gy", "notes": ""},
+                  {"roi": "Proximal Bronchus", "goalType": "Dx", "dose": 43, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D0.035cc <= 43 Gy", "notes": "Bronchial tree/smaller airways"},
+                  {"roi": "Proximal Bronchus", "goalType": "Dx", "dose": 63, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.035cc <= 105%", "notes": "Bronchial tree/smaller airways"},
+                  {"roi": "Proximal Bronchus", "goalType": "Dx", "dose": 21, "volume": 0.5, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.5cc <= 21 Gy", "notes": "Bronchial tree/smaller airways"},
+                  {"roi": "Ribs", "goalType": "Dx", "dose": 43, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.035cc <= 43 Gy", "notes": ""},
+                  {"roi": "Ribs", "goalType": "Dx", "dose": 35, "volume": 1, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D1cc <= 35 Gy", "notes": ""},
+                  {"roi": "Skin", "goalType": "Dx", "dose": 32, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.035cc <= 32 Gy", "notes": ""},
+                  {"roi": "Skin", "goalType": "Dx", "dose": 30, "volume": 10, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D10cc <= 30 Gy", "notes": ""},
+                  {"roi": "Spinal Canal", "goalType": "Dx", "dose": 28, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D0.035cc <= 28 Gy", "notes": ""},
+                  {"roi": "Trachea and large bronchus", "goalType": "Dx", "dose": 40, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D0.035cc <= 40 Gy", "notes": ""},
+                  {"roi": "Trachea and large bronchus", "goalType": "Dx", "dose": 63, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.035cc <= 105%", "notes": ""},
+                  {"roi": "Trachea and large bronchus", "goalType": "Dx", "dose": 18, "volume": 4, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D4cc <= 18 Gy", "notes": ""}
+                ]
+              },
+              {
+                "name": "ASTRO 2025 - Partial breast SBRT 5fx",
+                "doi": "10.1016/j.prro.2025.11.003",
+                "goals": [
+                  {"roi": "Breast", "goalType": "Dx", "dose": 0.9, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "useEQD2": false, "priority": "optimal", "goal_str": "D0.03cc <= 3% (Rx)", "notes": "Contralateral. Partial Breast. % likely of Rx"},
+                  {"roi": "Breast", "goalType": "Dx", "dose": 1.5, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "useEQD2": false, "priority": "mandatory", "goal_str": "D0.03cc <= 5% (Rx)", "notes": "Contralateral. Partial Breast. % likely of Rx"},
+                  {"roi": "Breast", "goalType": "Vx", "dose": 15, "volume": 50, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "useEQD2": false, "priority": "optimal", "goal_str": "V50% < 50%", "notes": "Ipsilateral. Partial Breast. Non-target tissue"},
+                  {"roi": "Breast", "goalType": "Vx", "dose": 15, "volume": 60, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "useEQD2": false, "priority": "mandatory", "goal_str": "V50% < 60%", "notes": "Ipsilateral. Partial Breast. Non-target tissue"},
+                  {"roi": "Breast", "goalType": "Vx", "dose": 28.5, "volume": 25, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "useEQD2": false, "priority": "optimal", "goal_str": "V95% < 25%", "notes": "Ipsilateral. Partial Breast. Non-target tissue"},
+                  {"roi": "Breast", "goalType": "Vx", "dose": 28.5, "volume": 40, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "useEQD2": false, "priority": "mandatory", "goal_str": "V95% < 40%", "notes": "Ipsilateral. Partial Breast. Non-target tissue"},
+                  {"roi": "Heart", "goalType": "Vx", "dose": 4.5, "volume": 5, "volumeUnits": "%", "operator": "LESSLESSTHANOREQUALTOTHAN", "priority": "optimal", "goal_str": "V15% <= 5%", "notes": "Left side. Partial Breast. Non-target tissue"},
+                  {"roi": "Heart", "goalType": "Vx", "dose": 4.5, "volume": 10, "volumeUnits": "%", "operator": "LESSLESSTHANOREQUALTOTHAN", "priority": "mandatory", "goal_str": "V15% <= 10%", "notes": "Left side. Partial Breast. Non-target tissue"},
+                  {"roi": "Heart", "goalType": "Vx", "dose": 1.5, "volume": 5, "volumeUnits": "%", "operator": "LESSLESSTHANOREQUALTOTHAN", "priority": "optimal", "goal_str": "V5% <= 5%", "notes": "Right side. Partial Breast. Non-target tissue"},
+                  {"roi": "Heart", "goalType": "Vx", "dose": 1.5, "volume": 10, "volumeUnits": "%", "operator": "LESSLESSTHANOREQUALTOTHAN", "priority": "mandatory", "goal_str": "V5% <= 10%", "notes": "Right side. Partial Breast. Non-target tissue"},
+                  {"roi": "Heart", "goalType": "Dmean", "dose": 1.5, "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "Dmean <= 1.5 Gy", "notes": "Partial Breast. Left"},
+                  {"roi": "Heart", "goalType": "Dmean", "dose": 2, "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "Dmean <= 2 Gy", "notes": "Partial Breast. Left"},
+                  {"roi": "Heart", "goalType": "Dmean", "dose": 0.7, "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "Dmean <= 0.7 Gy", "notes": "Partial Breast. Right"},
+                  {"roi": "Heart", "goalType": "Dmean", "dose": 1, "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "Dmean <= 1 Gy", "notes": "Partial Breast. Right"},
+                  {"roi": "Lung", "goalType": "Vx", "dose": 3, "volume": 5, "volumeUnits": "%", "operator": "LESSLESSTHANOREQUALTOTHAN", "priority": "optimal", "goal_str": "V10% <= 5%", "notes": "Contralateral. Partial Breast."},
+                  {"roi": "Lung", "goalType": "Vx", "dose": 3, "volume": 15, "volumeUnits": "%", "operator": "LESSLESSTHANOREQUALTOTHAN", "priority": "mandatory", "goal_str": "V10% <= 15%", "notes": "Contralateral. Partial Breast."},
+                  {"roi": "Lung", "goalType": "Vx", "dose": 9, "volume": 10, "volumeUnits": "%", "operator": "LESSLESSTHANOREQUALTOTHAN", "priority": "optimal", "goal_str": "V30% <= 10%", "notes": "Ipsilateral. Partial Breast."},
+                  {"roi": "Lung", "goalType": "Vx", "dose": 9, "volume": 15, "volumeUnits": "%", "operator": "LESSLESSTHANOREQUALTOTHAN", "priority": "mandatory", "goal_str": "V30% <= 15%", "notes": "Ipsilateral. Partial Breast."}
+                ]
+              },
+              {
+                "name": "ASTRO 2025 - Whole breast SBRT 5fx",
+                "doi": "10.1016/j.prro.2025.11.003",
+                "goals": [
+                  {"roi": "Chestwall", "goalType": "Dx", "dose": 33, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.03cc <= 110%", "notes": "Whole Breast 26Gy"},
+                  {"roi": "Chestwall", "goalType": "Vx", "dose": 32.1, "volume": 2, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "V107% <= 2%", "notes": "Whole Breast 26Gy"},
+                  {"roi": "Chestwall", "goalType": "Vx", "dose": 31.5, "volume": 5, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "V105% <= 5%", "notes": "Whole Breast 26Gy"},
+                  {"roi": "Heart", "goalType": "Vx", "dose": 1.5, "volume": 30, "volumeUnits": "%", "operator": "LESSTHAN", "priority": "mandatory", "goal_str": "V1.5Gy < 30%", "notes": "Whole Breast 26Gy"},
+                  {"roi": "Heart", "goalType": "Vx", "dose": 7, "volume": 5, "volumeUnits": "%", "operator": "LESSTHAN", "priority": "mandatory", "goal_str": "V7Gy < 5%", "notes": "Whole Breast 26Gy"},
+                  {"roi": "Lung", "goalType": "Vx", "dose": 8, "volume": 15, "volumeUnits": "%", "operator": "LESSTHAN", "priority": "mandatory", "goal_str": "V8Gy < 15%", "notes": "Ipsilateral. Whole Breast 26Gy"}
+                ]
               }
             ]
           },
-          "8": {
+          "8":           {
             "clinicalGoalSets": [
               {
                 "name": "CORSAIR - 8 Fractions - Chest",
@@ -1849,10 +2140,34 @@
                   {"roi": "Spinal Cord PRV", "goalType": "Dx", "dose": 32, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHAN", "useEQD2": false, "priority": "mandatory", "goal_str": "D0.035cc < 32 Gy", "notes": "Vertebral lesions"},
                   {"roi": "Trachea", "goalType": "Dx", "dose": 40, "volume": 0.1, "volumeUnits": "cc", "operator": "LESSTHAN", "useEQD2": false, "priority": "mandatory", "goal_str": "D0.1cc < 40 Gy", "notes": ""}
                 ]
+              },
+              {
+                "name": "ASTRO 2025 - Lung SBRT 8fx",
+                "doi": "10.1016/j.prro.2025.11.003",
+                "goals": [
+                  {"roi": "Brachial Plexus", "goalType": "Dx", "dose": 38, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHAN", "priority": "mandatory", "goal_str": "D0.035cc < 38 Gy", "notes": ""},
+                  {"roi": "Chestwall", "goalType": "Dx", "dose": 63, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D0.035cc <= 63 Gy", "notes": ""},
+                  {"roi": "Chestwall", "goalType": "Vx", "dose": 45, "volume": 30, "volumeUnits": "cc", "operator": "LESSTHAN", "priority": "mandatory", "goal_str": "V45Gy < 30 cc", "notes": ""},
+                  {"roi": "Esophagus", "goalType": "Dx", "dose": 40, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHAN", "priority": "optimal", "goal_str": "D0.035cc < 40 Gy", "notes": ""},
+                  {"roi": "Esophagus", "goalType": "Dx", "dose": 52.5, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHAN", "priority": "mandatory", "goal_str": "D0.035cc < 52.5 Gy", "notes": ""},
+                  {"roi": "Esophagus", "goalType": "Dx", "dose": 22, "volume": 5, "volumeUnits": "cc", "operator": "LESSTHAN", "priority": "mandatory", "goal_str": "D5cc < 22 Gy", "notes": ""},
+                  {"roi": "Great Vessels", "goalType": "Dx", "dose": 62, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHAN", "priority": "mandatory", "goal_str": "D0.035cc < 62 Gy", "notes": ""},
+                  {"roi": "Heart", "goalType": "Dx", "dose": 46, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHAN", "priority": "optimal", "goal_str": "D0.035cc < 46 Gy", "notes": ""},
+                  {"roi": "Heart", "goalType": "Dx", "dose": 60, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHAN", "priority": "mandatory", "goal_str": "D0.035cc < 60 Gy", "notes": ""},
+                  {"roi": "Heart", "goalType": "Dx", "dose": 34.4, "volume": 15, "volumeUnits": "cc", "operator": "LESSTHAN", "priority": "mandatory", "goal_str": "D15cc < 34.4 Gy", "notes": ""},
+                  {"roi": "Lungs", "goalType": "Vx", "dose": 26, "volume": 10, "volumeUnits": "%", "operator": "LESSTHAN", "priority": "optimal", "goal_str": "V26Gy < 10%", "notes": ""},
+                  {"roi": "Lungs", "goalType": "Dmean", "dose": 10, "operator": "LESSTHAN", "priority": "mandatory", "goal_str": "Dmean < 10 Gy", "notes": ""},
+                  {"roi": "Ribs", "goalType": "Dx", "dose": 63, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D0.035cc <= 63 Gy", "notes": ""},
+                  {"roi": "Ribs", "goalType": "Dx", "dose": 50, "volume": 5, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D5cc <= 50 Gy", "notes": ""},
+                  {"roi": "Spinal Canal", "goalType": "Dx", "dose": 32, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHAN", "priority": "optimal", "goal_str": "D0.035cc < 32 Gy", "notes": ""},
+                  {"roi": "Trachea and large bronchus", "goalType": "Dx", "dose": 46.3, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHAN", "priority": "optimal", "goal_str": "D0.035cc < 46.3 Gy", "notes": "Trachea/Main Bronchus"},
+                  {"roi": "Trachea and large bronchus", "goalType": "Dx", "dose": 56, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHAN", "priority": "mandatory", "goal_str": "D0.035cc < 56 Gy", "notes": "Trachea/Main Bronchus"},
+                  {"roi": "Trachea and large bronchus", "goalType": "Dx", "dose": 50, "volume": 5, "volumeUnits": "cc", "operator": "LESSTHAN", "priority": "mandatory", "goal_str": "D5cc < 50 Gy", "notes": "Trachea/Main Bronchus"}
+                ]
               }
             ]
           },
-          "10": {
+          "10":           {
             "clinicalGoalSets": [
               {
                 "name": "Timmerman Tables - 10 Fractions - Chest",
@@ -1877,10 +2192,33 @@
                   {"roi": "Trachea and large bronchus", "goalType": "Dx", "dose": 52, "volume": 5, "volumeUnits": "cc", "operator": "LESSTHAN", "useEQD2": false, "priority": "", "goal_str": "D5 cc < 52 Gy", "notes": "Impairment of pulmonary toilet"},
                   {"roi": "Trachea and large bronchus", "goalType": "Dx", "dose": 59, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHAN", "useEQD2": false, "priority": "", "goal_str": "DMAX < 59 Gy", "notes": "Impairment of pulmonary toilet"}
                 ]
+              },
+              {
+                "name": "ASTRO 2025 - Lung (Mod/Ultra Hypo 10fx)",
+                "doi": "10.1016/j.prro.2025.11.003",
+                "goals": [
+                  {"roi": "Brachial Plexus", "goalType": "Dx", "dose": 43, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.035cc <= 43 Gy", "notes": ""},
+                  {"roi": "Chestwall", "goalType": "Vx", "dose": 50, "volume": 60, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "V50Gy < 60 cc", "notes": ""},
+                  {"roi": "Esophagus", "goalType": "Dx", "dose": 48, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D0.035cc <= 48 Gy", "notes": ""},
+                  {"roi": "Esophagus", "goalType": "Dx", "dose": 52.5, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.035cc <= 52.5 Gy", "notes": ""},
+                  {"roi": "Esophagus", "goalType": "Dx", "dose": 24, "volume": 5, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D5cc <= 24 Gy", "notes": ""},
+                  {"roi": "Great Vessels", "goalType": "Dx", "dose": 62.9, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.035cc <= 62.9 Gy", "notes": ""},
+                  {"roi": "Great Vessels", "goalType": "Dx", "dose": 55.7, "volume": 10, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D10cc <= 55.7 Gy", "notes": ""},
+                  {"roi": "Heart", "goalType": "Dx", "dose": 42.5, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D0.035cc <= 42.5 Gy", "notes": ""},
+                  {"roi": "Heart", "goalType": "Dx", "dose": 60, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.035cc <= 60 Gy", "notes": ""},
+                  {"roi": "Heart", "goalType": "Dx", "dose": 36.6, "volume": 15, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D15cc <= 36.6 Gy", "notes": ""},
+                  {"roi": "Lungs", "goalType": "Vx", "dose": 16, "volume": 30, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "V16Gy <= 30%", "notes": ""},
+                  {"roi": "Lungs", "goalType": "Vx", "dose": 16, "volume": 32, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "V16Gy <= 32%", "notes": ""},
+                  {"roi": "Lungs", "goalType": "Dmean", "dose": 12, "operator": "LESSTHAN", "priority": "mandatory", "goal_str": "Dmean < 12 Gy", "notes": ""},
+                  {"roi": "Spinal Canal", "goalType": "Dx", "dose": 33.3, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D0.035cc <= 33.3 Gy", "notes": ""},
+                  {"roi": "Spinal Canal", "goalType": "Dx", "dose": 36, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.035cc <= 36 Gy", "notes": ""},
+                  {"roi": "Trachea and large bronchus", "goalType": "Dx", "dose": 59, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.035cc <= 59 Gy", "notes": "Trachea/Main Bronchus"},
+                  {"roi": "Trachea and large bronchus", "goalType": "Dx", "dose": 52, "volume": 5, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D5cc <= 52 Gy", "notes": "Trachea/Main Bronchus"}
+                ]
               }
             ]
           },
-          "15": {
+          "15":           {
             "clinicalGoalSets": [
               {
                 "name": "Timmerman Tables - 15 Fractions - Chest",
@@ -1905,10 +2243,84 @@
                   {"roi": "Trachea and large bronchus", "goalType": "Dx", "dose": 55.5, "volume": 5, "volumeUnits": "cc", "operator": "LESSTHAN", "useEQD2": false, "priority": "", "goal_str": "D5 cc < 55.5 Gy", "notes": "Impairment of pulmonary toilet"},
                   {"roi": "Trachea and large bronchus", "goalType": "Dx", "dose": 63, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHAN", "useEQD2": false, "priority": "", "goal_str": "DMAX < 63 Gy", "notes": "Impairment of pulmonary toilet"}
                 ]
+              },
+              {
+                "name": "ASTRO 2025 - Lung (Mod Hypo 15fx)",
+                "doi": "10.1016/j.prro.2025.11.003",
+                "goals": [
+                  {"roi": "Brachial Plexus", "goalType": "Dx", "dose": 49.8, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D0.03cc <= 49.8 Gy", "notes": ""},
+                  {"roi": "Brachial Plexus", "goalType": "Dx", "dose": 52, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.03cc <= 52 Gy", "notes": ""},
+                  {"roi": "Chestwall", "goalType": "Vx", "dose": 40, "volume": 150, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "V40Gy < 150 cc", "notes": ""},
+                  {"roi": "Esophagus", "goalType": "Dx", "dose": 58.9, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D0.03cc <= 58.9 Gy", "notes": ""},
+                  {"roi": "Esophagus", "goalType": "Dx", "dose": 61.3, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.03cc <= 61.3 Gy", "notes": ""},
+                  {"roi": "Esophagus", "goalType": "Dmean", "dose": 25, "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "Dmean <= 25 Gy", "notes": ""},
+                  {"roi": "Esophagus", "goalType": "Dmean", "dose": 32, "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "Dmean <= 32 Gy", "notes": ""},
+                  {"roi": "Great Vessels", "goalType": "Dx", "dose": 60, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D0.03cc <= 60 Gy", "notes": ""},
+                  {"roi": "Great Vessels", "goalType": "Dx", "dose": 66, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.03cc <= 66 Gy", "notes": ""},
+                  {"roi": "Heart", "goalType": "Dx", "dose": 60, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D0.03cc <= 60 Gy", "notes": ""},
+                  {"roi": "Heart", "goalType": "Dx", "dose": 66, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.03cc <= 66 Gy", "notes": ""},
+                  {"roi": "Heart", "goalType": "Dmean", "dose": 16.5, "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "Dmean <= 16.5 Gy", "notes": ""},
+                  {"roi": "Heart", "goalType": "Dmean", "dose": 18.5, "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "Dmean <= 18.5 Gy", "notes": ""},
+                  {"roi": "Lungs", "goalType": "Vx", "dose": 16.5, "volume": 37, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "V16.5Gy <= 37%", "notes": ""},
+                  {"roi": "Lungs", "goalType": "Vx", "dose": 16.5, "volume": 40, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "V16.5Gy <= 40%", "notes": ""},
+                  {"roi": "Lungs", "goalType": "Vx", "dose": 5, "volume": 65, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "V5Gy <= 65%", "notes": ""},
+                  {"roi": "Lungs", "goalType": "Vx", "dose": 5, "volume": 70, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "V5Gy <= 70%", "notes": ""},
+                  {"roi": "Lungs", "goalType": "Dmean", "dose": 16.5, "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "Dmean <= 16.5 Gy", "notes": ""},
+                  {"roi": "Lungs", "goalType": "Dmean", "dose": 18.5, "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "Dmean <= 18.5 Gy", "notes": ""},
+                  {"roi": "Spinal Canal", "goalType": "Dx", "dose": 36.5, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D0.03cc <= 36.5 Gy", "notes": ""},
+                  {"roi": "Spinal Canal", "goalType": "Dx", "dose": 40.2, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.03cc <= 40.2 Gy", "notes": ""},
+                  {"roi": "Trachea and large bronchus", "goalType": "Dx", "dose": 60, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D0.03cc <= 60 Gy", "notes": "Trachea/Main Bronchus"},
+                  {"roi": "Trachea and large bronchus", "goalType": "Dx", "dose": 66, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.03cc <= 66 Gy", "notes": "Trachea/Main Bronchus"}
+                ]
+              },
+              {
+                "name": "ASTRO 2025 - Breast/chest wall with lymph nodes (Mod Hypo 15fx)",
+                "doi": "10.1016/j.prro.2025.11.003",
+                "goals": [
+                  {"roi": "Breast", "goalType": "Dx", "dose": 3, "volume": 10, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D10% <= 3 Gy", "notes": "Contralateral. With nodes"},
+                  {"roi": "Breast", "goalType": "Dx", "dose": 5, "volume": 10, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D10% <= 5 Gy", "notes": "Contralateral. With nodes"},
+                  {"roi": "Chestwall", "goalType": "Dx", "dose": 46.8, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D0.035cc <= 110%", "notes": "With nodes"},
+                  {"roi": "Chestwall", "goalType": "Dx", "dose": 49, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.035cc <= 115%", "notes": "With nodes"},
+                  {"roi": "Chestwall", "goalType": "Vx", "dose": 45.5, "volume": 10, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "V107% <= 10cc", "notes": "With nodes"},
+                  {"roi": "Heart", "goalType": "Dmean", "dose": 3, "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "Dmean <= 3 Gy", "notes": "Left-sided, With nodes"},
+                  {"roi": "Heart", "goalType": "Dmean", "dose": 5, "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "Dmean <= 5 Gy", "notes": "Left-sided, With nodes"},
+                  {"roi": "Heart", "goalType": "Dmean", "dose": 1.6, "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "Dmean <= 1.6 Gy", "notes": "Right-sided, With nodes"},
+                  {"roi": "Heart", "goalType": "Dmean", "dose": 2.4, "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "Dmean <= 2.4 Gy", "notes": "Right-sided, With nodes"},
+                  {"roi": "LN_Ax", "goalType": "Dx", "dose": 46.8, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D0.03cc <= 110%", "notes": "With nodes"},
+                  {"roi": "LN_Ax", "goalType": "Dx", "dose": 49, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.03cc <= 115%", "notes": "With nodes"},
+                  {"roi": "LN_IMN", "goalType": "Dx", "dose": 46.8, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D0.03cc <= 110%", "notes": "With nodes"},
+                  {"roi": "LN_IMN", "goalType": "Dx", "dose": 49, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.03cc <= 115%", "notes": "With nodes"},
+                  {"roi": "LN_Sclav", "goalType": "Dx", "dose": 46.8, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D0.03cc <= 110%", "notes": "With nodes"},
+                  {"roi": "LN_Sclav", "goalType": "Dx", "dose": 49, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.03cc <= 115%", "notes": "With nodes"},
+                  {"roi": "Lung", "goalType": "Vx", "dose": 4.3, "volume": 15, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "V4.3Gy <= 15%", "notes": "Contralateral. With nodes"},
+                  {"roi": "Lung", "goalType": "Vx", "dose": 18, "volume": 35, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "V18Gy <= 35%", "notes": "Ipsilateral. With nodes"},
+                  {"roi": "Lung", "goalType": "Vx", "dose": 18, "volume": 40, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "V18Gy <= 40%", "notes": "Ipsilateral. With nodes"},
+                  {"roi": "Lung", "goalType": "Vx", "dose": 10, "volume": 60, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "V10Gy <= 60%", "notes": "Ipsilateral. With nodes"},
+                  {"roi": "Spinal Cord", "goalType": "Dx", "dose": 37.8, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D0.035cc <= 37.8 Gy", "notes": "With nodes"}
+                ]
+              },
+              {
+                "name": "ASTRO 2025 - Breast/chest wall without lymph nodes (Mod Hypo 15fx)",
+                "doi": "10.1016/j.prro.2025.11.003",
+                "goals": [
+                  {"roi": "Breast", "goalType": "Dx", "dose": 1.44, "volume": 5, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D5% <= 1.44 Gy", "notes": "Contralateral. No nodes"},
+                  {"roi": "Breast", "goalType": "Dx", "dose": 2.4, "volume": 5, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D5% <= 2.4 Gy", "notes": "Contralateral. No nodes"},
+                  {"roi": "Chestwall", "goalType": "Dx", "dose": 46.8, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D0.03cc <= 110%", "notes": "No nodes"},
+                  {"roi": "Chestwall", "goalType": "Dx", "dose": 49, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.03cc <= 115%", "notes": "No nodes"},
+                  {"roi": "Chestwall", "goalType": "Vx", "dose": 45.5, "volume": 10, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "V107% <= 10cc", "notes": "No nodes"},
+                  {"roi": "Heart", "goalType": "Dmean", "dose": 1.6, "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "Dmean <= 1.6 Gy", "notes": "Left-sided, No nodes"},
+                  {"roi": "Heart", "goalType": "Dmean", "dose": 2.4, "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "Dmean <= 2.4 Gy", "notes": "Left-sided, No nodes"},
+                  {"roi": "Heart", "goalType": "Dmean", "dose": 0.8, "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "Dmean <= 0.8 Gy", "notes": "Right-sided, No nodes"},
+                  {"roi": "Heart", "goalType": "Dmean", "dose": 1.6, "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "Dmean <= 1.6 Gy", "notes": "Right-sided, No nodes"},
+                  {"roi": "Lung", "goalType": "Vx", "dose": 4, "volume": 10, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "V4Gy <= 10%", "notes": "Contralateral. No nodes"},
+                  {"roi": "Lung", "goalType": "Vx", "dose": 4, "volume": 15, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "V4Gy <= 15%", "notes": "Contralateral. No nodes"},
+                  {"roi": "Lung", "goalType": "Vx", "dose": 16, "volume": 15, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "V16Gy <= 15%", "notes": "Ipsilateral. No nodes"},
+                  {"roi": "Lung", "goalType": "Vx", "dose": 16, "volume": 20, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "V16Gy <= 20%", "notes": "Ipsilateral. No nodes"}
+                ]
               }
             ]
           },
-          "20": {
+          "20":           {
             "clinicalGoalSets": [
               {
                 "name": "Timmerman Tables - 20 Fractions - Chest",
@@ -1939,9 +2351,9 @@
         }
       }
     },
-    "HeadNeck": {
-      "fractionations": {
-        "conventional": {
+    "HeadNeck":     {
+      "fractionations":       {
+        "conventional":         {
           "clinicalGoalSets": [
             {
               "name": "CORSAIR - Conventional - HeadNeck",
@@ -2068,11 +2480,38 @@
                 {"roi": "Spinal Cord PRV", "goalType": "Dx", "dose": 50, "volume": 1, "volumeUnits": "cc", "operator": "LESSTHAN", "useEQD2": false, "priority": "mandatory", "goal_str": "D1cc < 50 Gy", "notes": "Acceptable. PRV margin 3-5 mm"},
                 {"roi": "Thyroid", "goalType": "Dmean", "dose": 45.6, "operator": "LESSTHAN", "useEQD2": false, "priority": "", "goal_str": "Dmean < 45.6 Gy", "notes": "Study Result: <45.6 Gy recommended to reduce hypothyroidism"}
               ]
+            },
+            {
+              "name": "ASTRO 2025 - Head and Neck (Conv)",
+              "doi": "10.1016/j.prro.2025.11.003",
+              "goals": [
+                {"roi": "Brachial Plexus", "goalType": "Dx", "dose": 66, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D0.03cc <= 66 Gy", "notes": ""},
+                {"roi": "Brachial Plexus", "goalType": "Dx", "dose": 72, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.03cc <= 72 Gy", "notes": ""},
+                {"roi": "Brainstem", "goalType": "Dx", "dose": 50, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D0.03cc <= 50 Gy", "notes": ""},
+                {"roi": "Brainstem", "goalType": "Dx", "dose": 52, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.03cc <= 52 Gy", "notes": ""},
+                {"roi": "Cochlea", "goalType": "Dx", "dose": 35, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D0.03cc <= 35 Gy", "notes": "Oropharynx only"},
+                {"roi": "Esophagus", "goalType": "Dmean", "dose": 35, "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "Dmean <= 35 Gy", "notes": "Oropharynx only"},
+                {"roi": "Esophagus", "goalType": "Dmean", "dose": 45, "operator": "LESSTHANOREQUALTO", "useEQD2": false, "priority": "mandatory", "goal_str": "Dmean <= 45 Gy", "notes": "Larynx only"},
+                {"roi": "Larynx", "goalType": "Dmean", "dose": 35, "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "Dmean <= 35 Gy", "notes": "Oropharynx only"},
+                {"roi": "Mandible", "goalType": "Dx", "dose": 70, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D0.03cc <= 70 Gy", "notes": ""},
+                {"roi": "Mandible", "goalType": "Dx", "dose": 73.5, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.03cc <= 73.5 Gy", "notes": ""},
+                {"roi": "Oral Cavity", "goalType": "Dx", "dose": 60, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.03cc <= 60 Gy", "notes": "Bilateral neck tx. Uninvolved tissue"},
+                {"roi": "Oral Cavity", "goalType": "Dmean", "dose": 30, "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "Dmean <= 30 Gy", "notes": "Bilateral neck tx. Uninvolved tissue"},
+                {"roi": "Oral Cavity", "goalType": "Dmean", "dose": 20, "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "Dmean <= 30 Gy", "notes": "Unilateral neck tx. Uninvolved tissue"},
+                {"roi": "Parotid Gland", "goalType": "Dmean", "dose": 26, "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "Dmean <= 26 Gy", "notes": "Bilateral neck tx"},
+                {"roi": "Parotid Gland", "goalType": "Dmean", "dose": 7, "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "Dmean <= 7 Gy", "notes": "Unilateral neck tx"},
+                {"roi": "Pharyngeal constrictor muscles", "goalType": "Dmean", "dose": 50, "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "Dmean <= 50 Gy", "notes": "-CTV"},
+                {"roi": "Pharyngeal constrictor muscles", "goalType": "Dmean", "dose": 60, "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "Dmean <= 60 Gy", "notes": "-CTV"},
+                {"roi": "Spinal Cord", "goalType": "Dx", "dose": 45, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D0.03cc <= 45 Gy", "notes": ""},
+                {"roi": "Spinal Cord", "goalType": "Dx", "dose": 50, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.03cc <= 50 Gy", "notes": ""},
+                {"roi": "Submandibular Gland", "goalType": "Dmean", "dose": 39, "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "Dmean <= 39 Gy", "notes": "Bilateral neck tx"},
+                {"roi": "Submandibular Gland", "goalType": "Dmean", "dose": 10, "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "Dmean <= 10 Gy", "notes": "Unilateral neck tx"}
+              ]
             }
           ]
         },
-        "hypofractionated": {
-          "1": {
+        "hypofractionated":         {
+          "1":           {
             "clinicalGoalSets": [
               {
                 "name": "CORSAIR - 1 Fraction - HeadNeck",
@@ -2185,7 +2624,7 @@
               }
             ]
           },
-          "2": {
+          "2":           {
             "clinicalGoalSets": [
               {
                 "name": "Timmerman Tables - 2 Fractions - HeadNeck",
@@ -2232,7 +2671,7 @@
               }
             ]
           },
-          "3": {
+          "3":           {
             "clinicalGoalSets": [
               {
                 "name": "CORSAIR - 3 Fractions - HeadNeck",
@@ -2340,7 +2779,7 @@
               }
             ]
           },
-          "4": {
+          "4":           {
             "clinicalGoalSets": [
               {
                 "name": "Timmerman Tables - 4 Fractions - HeadNeck",
@@ -2379,7 +2818,7 @@
               }
             ]
           },
-          "5": {
+          "5":           {
             "clinicalGoalSets": [
               {
                 "name": "CORSAIR - 5 Fractions - HeadNeck",
@@ -2495,7 +2934,7 @@
               }
             ]
           },
-          "8": {
+          "8":           {
             "clinicalGoalSets": [
               {
                 "name": "CORSAIR - 8 Fractions - HeadNeck",
@@ -2555,7 +2994,7 @@
               }
             ]
           },
-          "10": {
+          "10":           {
             "clinicalGoalSets": [
               {
                 "name": "Timmerman Tables - 10 Fractions - HeadNeck",
@@ -2596,7 +3035,7 @@
               }
             ]
           },
-          "15": {
+          "15":           {
             "clinicalGoalSets": [
               {
                 "name": "Timmerman Tables - 15 Fractions - HeadNeck",
@@ -2637,7 +3076,7 @@
               }
             ]
           },
-          "20": {
+          "20":           {
             "clinicalGoalSets": [
               {
                 "name": "Timmerman Tables - 20 Fractions - HeadNeck",
@@ -2677,13 +3116,31 @@
                 ]
               }
             ]
+          },
+          "28":           {
+            "clinicalGoalSets": [
+              {
+                "name": "ASTRO 2025 - Early Glottic Larynx (Mod Hypo)",
+                "doi": "10.1016/j.prro.2025.11.003",
+                "goals": [
+                  {"roi": "Carotid Artery", "goalType": "Dx", "dose": 35, "volume": 2, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D2% <= 35 Gy", "notes": ""},
+                  {"roi": "Carotid Artery", "goalType": "Dmean", "dose": 20, "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "Dmean <= 20 Gy", "notes": ""},
+                  {"roi": "Carotid Artery", "goalType": "Dmean", "dose": 50, "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "Dmean <= 50 Gy", "notes": ""},
+                  {"roi": "Esophagus", "goalType": "Dx", "dose": 63, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.03cc <= 100%", "notes": ""},
+                  {"roi": "Pharyngeal constrictor muscles", "goalType": "Dx", "dose": 63, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.03cc <= 100%", "notes": "-CTV"},
+                  {"roi": "Spinal Cord", "goalType": "Dx", "dose": 20, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D0.03cc <= 20 Gy", "notes": ""},
+                  {"roi": "Spinal Cord", "goalType": "Dx", "dose": 45, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.03cc <= 45 Gy", "notes": ""},
+                  {"roi": "Submandibular Gland", "goalType": "Dmean", "dose": 15, "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "Dmean <= 15 Gy", "notes": ""}
+                ]
+              }
+            ]
           }
         }
       }
     },
-    "Pelvis": {
-      "fractionations": {
-        "conventional": {
+    "Pelvis":     {
+      "fractionations":       {
+        "conventional":         {
           "clinicalGoalSets": [
             {
               "name": "CORSAIR - Conventional - Pelvis",
@@ -2815,11 +3272,85 @@
                 {"roi": "Urethra", "goalType": "Dx", "dose": 77, "volume": 2, "volumeUnits": "%", "operator": "LESSTHAN", "useEQD2": false, "priority": "optimal", "goal_str": "D2% < 77 Gy", "notes": ""},
                 {"roi": "Urethra", "goalType": "Dx", "dose": 83, "volume": 2, "volumeUnits": "%", "operator": "LESSTHAN", "useEQD2": false, "priority": "mandatory", "goal_str": "D2% < 83 Gy", "notes": ""}
               ]
+            },
+            {
+              "name": "ASTRO 2025 - Prostate (Conv)",
+              "doi": "10.1016/j.prro.2025.11.003",
+              "goals": [
+                {"roi": "Bladder", "goalType": "Vx", "dose": 75, "volume": 25, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "V75Gy <= 25%", "notes": ""},
+                {"roi": "Bladder", "goalType": "Vx", "dose": 70, "volume": 35, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "V70Gy <= 35%", "notes": ""},
+                {"roi": "Bladder", "goalType": "Vx", "dose": 50, "volume": 50, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "V50Gy <= 50%", "notes": ""},
+                {"roi": "Femoral Head", "goalType": "Vx", "dose": 50, "volume": 10, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "V50Gy <= 10%", "notes": ""},
+                {"roi": "Large Bowel", "goalType": "Dx", "dose": 62.5, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.035cc <= 62.5 Gy", "notes": ""},
+                {"roi": "Large Bowel", "goalType": "Vx", "dose": 60, "volume": 1, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "V60Gy <= 1%", "notes": ""},
+                {"roi": "Penile Bulb", "goalType": "Dmean", "dose": 52.5, "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "Dmean <= 52.5 Gy", "notes": ""},
+                {"roi": "Rectum", "goalType": "Vx", "dose": 75, "volume": 10, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "V75Gy <= 10%", "notes": ""},
+                {"roi": "Rectum", "goalType": "Vx", "dose": 75, "volume": 15, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "V75Gy <= 15%", "notes": ""},
+                {"roi": "Rectum", "goalType": "Vx", "dose": 70, "volume": 15, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "V70Gy <= 15%", "notes": ""},
+                {"roi": "Rectum", "goalType": "Vx", "dose": 70, "volume": 25, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "V70Gy <= 25%", "notes": ""},
+                {"roi": "Rectum", "goalType": "Vx", "dose": 40, "volume": 40, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "V40Gy < 40%", "notes": ""},
+                {"roi": "Rectum", "goalType": "Vx", "dose": 40, "volume": 65, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "V40Gy < 65%", "notes": ""},
+                {"roi": "Small Bowel", "goalType": "Dx", "dose": 52.5, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D0.035cc <= 52.5 Gy", "notes": ""},
+                {"roi": "Small Bowel", "goalType": "Dx", "dose": 54, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.035cc <= 54 Gy", "notes": ""},
+                {"roi": "Small Bowel", "goalType": "Vx", "dose": 45, "volume": 150, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "V45Gy <= 150cc", "notes": ""},
+                {"roi": "Small Bowel", "goalType": "Vx", "dose": 45, "volume": 200, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "V45Gy <= 200cc", "notes": ""}
+              ]
+            },
+            {
+              "name": "ASTRO 2025 - Prostate Post-Op (Conv)",
+              "doi": "10.1016/j.prro.2025.11.003",
+              "goals": [
+                {"roi": "Bladder", "goalType": "Vx", "dose": 65, "volume": 50, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "V65Gy <= 50%", "notes": "Bladder-CTVp"},
+                {"roi": "Bladder", "goalType": "Vx", "dose": 65, "volume": 57.5, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "V65Gy <= 57.5%", "notes": "Bladder-CTVp"},
+                {"roi": "Bladder", "goalType": "Vx", "dose": 40, "volume": 70, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "V40Gy <= 70%", "notes": "Bladder-CTVp"},
+                {"roi": "Bladder", "goalType": "Vx", "dose": 40, "volume": 77, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "V40Gy <= 77%", "notes": "Bladder-CTVp"},
+                {"roi": "Femoral Head", "goalType": "Vx", "dose": 50, "volume": 10, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "V50Gy <= 10%", "notes": ""},
+                {"roi": "Femoral Head", "goalType": "Vx", "dose": 50, "volume": 15, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "V50Gy <= 15%", "notes": ""},
+                {"roi": "Large Bowel", "goalType": "Dx", "dose": 62.5, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.03cc <= 62.5 Gy", "notes": ""},
+                {"roi": "Large Bowel", "goalType": "Vx", "dose": 60, "volume": 1, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "V60Gy <= 1%", "notes": ""},
+                {"roi": "Penile Bulb", "goalType": "Dmean", "dose": 52.5, "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "Dmean <= 52.5 Gy", "notes": ""},
+                {"roi": "Rectum", "goalType": "Vx", "dose": 65, "volume": 35, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "V65Gy <= 35%", "notes": ""},
+                {"roi": "Rectum", "goalType": "Vx", "dose": 65, "volume": 45, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "V65Gy <= 45%", "notes": ""},
+                {"roi": "Rectum", "goalType": "Vx", "dose": 40, "volume": 55, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "V40Gy <= 55%", "notes": ""},
+                {"roi": "Rectum", "goalType": "Vx", "dose": 40, "volume": 65, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "V40Gy <= 65%", "notes": ""},
+                {"roi": "Small Bowel", "goalType": "Vx", "dose": 60, "volume": 0.1, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "V60Gy <= 0.1 cc", "notes": ""},
+                {"roi": "Small Bowel", "goalType": "Vx", "dose": 45, "volume": 150, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "V45Gy <= 150 cc", "notes": ""},
+                {"roi": "Small Bowel", "goalType": "Vx", "dose": 45, "volume": 200, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "V45Gy <= 200 cc", "notes": ""}
+              ]
+            },
+            {
+              "name": "ASTRO 2025 - Rectal (Conv 1.8-2Gy/fx)",
+              "doi": "10.1016/j.prro.2025.11.003",
+              "goals": [
+                {"roi": "Bladder", "goalType": "Vx", "dose": 45, "volume": 15, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "V45Gy <= 15%", "notes": ""},
+                {"roi": "Bladder", "goalType": "Vx", "dose": 45, "volume": 30, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "V45Gy <= 30%", "notes": ""},
+                {"roi": "Bladder", "goalType": "Dmean", "dose": 40, "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "Dmean <= 40 Gy", "notes": ""},
+                {"roi": "Bladder", "goalType": "Dmean", "dose": 44, "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "Dmean <= 44 Gy", "notes": ""},
+                {"roi": "Bowel", "goalType": "Vx", "dose": 50, "volume": 30, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "V50Gy <= 30 cc", "notes": "Individual Loops"},
+                {"roi": "Bowel", "goalType": "Vx", "dose": 45, "volume": 150, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "V45Gy <= 150 cc", "notes": "Individual Loops"},
+                {"roi": "Bowel", "goalType": "Dx", "dose": 56, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D0.03cc <= 56 Gy", "notes": "Individual Loops"},
+                {"roi": "Bowel", "goalType": "Dx", "dose": 60, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.03cc <= 60 Gy", "notes": "Individual Loops"},
+                {"roi": "Femoral Head", "goalType": "Dx", "dose": 45, "volume": 5, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D5% <= 45 Gy", "notes": ""},
+                {"roi": "Femoral Head", "goalType": "Dx", "dose": 49.5, "volume": 5, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D5% <= 49.5 Gy", "notes": ""},
+                {"roi": "Femoral Head", "goalType": "Dx", "dose": 30, "volume": 50, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D50% <= 30 Gy", "notes": ""},
+                {"roi": "Femoral Head", "goalType": "Dx", "dose": 33, "volume": 50, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D50% <= 33 Gy", "notes": ""},
+                {"roi": "Genitals", "goalType": "Vx", "dose": 40, "volume": 5, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "V40Gy <= 5%", "notes": ""},
+                {"roi": "Genitals", "goalType": "Vx", "dose": 40, "volume": 10, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "V40Gy <= 10%", "notes": ""},
+                {"roi": "Genitals", "goalType": "Vx", "dose": 30, "volume": 35, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "V30Gy <= 35%", "notes": ""},
+                {"roi": "Genitals", "goalType": "Vx", "dose": 20, "volume": 50, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "V20Gy <= 50%", "notes": ""},
+                {"roi": "Small Bowel", "goalType": "Dx", "dose": 56, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D0.03cc <= 56 Gy", "notes": "Bowel Bag or Loops"},
+                {"roi": "Small Bowel", "goalType": "Dx", "dose": 60, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.03cc <= 60 Gy", "notes": "Bowel Bag or Loops"},
+                {"roi": "Small Bowel", "goalType": "Dx", "dose": 45, "volume": 100, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D100cc <= 45 Gy", "notes": "Bowel Bag"},
+                {"roi": "Small Bowel", "goalType": "Dx", "dose": 49.5, "volume": 100, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D100cc <= 49.5 Gy", "notes": "Bowel Bag"},
+                {"roi": "Small Bowel", "goalType": "Dx", "dose": 35, "volume": 180, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D180cc <= 35 Gy", "notes": "Bowel Bag"},
+                {"roi": "Small Bowel", "goalType": "Dx", "dose": 38.5, "volume": 180, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D180cc <= 38.5 Gy", "notes": "Bowel Bag"},
+                {"roi": "Vagina", "goalType": "Vx", "dose": 45, "volume": 50, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "V45Gy <= 50%", "notes": "Vaginal canal"}
+              ]
             }
           ]
         },
-        "hypofractionated": {
-          "1": {
+        "hypofractionated":         {
+          "1":           {
             "clinicalGoalSets": [
               {
                 "name": "CORSAIR - 1 Fraction - Pelvis",
@@ -2921,7 +3452,7 @@
               }
             ]
           },
-          "2": {
+          "2":           {
             "clinicalGoalSets": [
               {
                 "name": "Timmerman Tables - 2 Fractions - Pelvis",
@@ -2960,7 +3491,7 @@
               }
             ]
           },
-          "3": {
+          "3":           {
             "clinicalGoalSets": [
               {
                 "name": "CORSAIR - 3 Fractions - Pelvis",
@@ -3063,7 +3594,7 @@
               }
             ]
           },
-          "4": {
+          "4":           {
             "clinicalGoalSets": [
               {
                 "name": "Timmerman Tables - 4 Fractions - Pelvis",
@@ -3105,7 +3636,7 @@
               }
             ]
           },
-          "5": {
+          "5":           {
             "clinicalGoalSets": [
               {
                 "name": "CORSAIR - 5 Fractions - Pelvis",
@@ -3232,10 +3763,47 @@
                   {"roi": "Spinal Canal", "goalType": "Dx", "dose": 25.3, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHAN", "useEQD2": false, "priority": "mandatory", "goal_str": "D0.035cc < 25.3 Gy", "notes": "Non-vertebral lesions"},
                   {"roi": "Spinal Cord PRV", "goalType": "Dx", "dose": 25.3, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHAN", "useEQD2": false, "priority": "mandatory", "goal_str": "D0.035cc < 25.3 Gy", "notes": "Non-vertebral lesions"}
                 ]
+              },
+              {
+                "name": "ASTRO 2025 - Prostate SBRT 5fx",
+                "doi": "10.1016/j.prro.2025.11.003",
+                "goals": [
+                  {"roi": "Bladder", "goalType": "Vx", "dose": 37, "volume": 5, "volumeUnits": "cc", "operator": "LESSTHAN", "priority": "optimal", "goal_str": "V37Gy < 5 cc", "notes": ""},
+                  {"roi": "Bladder", "goalType": "Vx", "dose": 37, "volume": 20, "volumeUnits": "cc", "operator": "LESSTHAN", "priority": "mandatory", "goal_str": "V37Gy < 20 cc", "notes": ""},
+                  {"roi": "Bladder", "goalType": "Vx", "dose": 18.1, "volume": 40, "volumeUnits": "%", "operator": "LESSTHAN", "priority": "optimal", "goal_str": "V18.1Gy < 40%", "notes": ""},
+                  {"roi": "Femoral Head", "goalType": "Vx", "dose": 14.5, "volume": 5, "volumeUnits": "%", "operator": "LESSTHAN", "priority": "optimal", "goal_str": "V14.5Gy < 5%", "notes": ""},
+                  {"roi": "Large Bowel", "goalType": "Dx", "dose": 30, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D0.03cc <= 30 Gy", "notes": ""},
+                  {"roi": "Penile Bulb", "goalType": "Dx", "dose": 36.25, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D0.03cc <= 36.25 Gy", "notes": ""},
+                  {"roi": "Penile Bulb", "goalType": "Vx", "dose": 29.5, "volume": 50, "volumeUnits": "%", "operator": "LESSTHAN", "priority": "optimal", "goal_str": "V29.5Gy < 50%", "notes": ""},
+                  {"roi": "Rectum", "goalType": "Vx", "dose": 36, "volume": 1, "volumeUnits": "cc", "operator": "LESSTHAN", "priority": "optimal", "goal_str": "V36Gy < 1 cc", "notes": ""},
+                  {"roi": "Rectum", "goalType": "Vx", "dose": 36, "volume": 3, "volumeUnits": "cc", "operator": "LESSTHAN", "priority": "mandatory", "goal_str": "V36Gy < 3 cc", "notes": ""},
+                  {"roi": "Rectum", "goalType": "Vx", "dose": 29, "volume": 20, "volumeUnits": "%", "operator": "LESSTHAN", "priority": "optimal", "goal_str": "V29Gy < 20%", "notes": ""},
+                  {"roi": "Rectum", "goalType": "Vx", "dose": 18.1, "volume": 50, "volumeUnits": "%", "operator": "LESSTHAN", "priority": "optimal", "goal_str": "V18.1Gy < 50%", "notes": ""},
+                  {"roi": "Small Bowel", "goalType": "Vx", "dose": 30, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "V30Gy <= 0.03 cc", "notes": ""},
+                  {"roi": "Small Bowel", "goalType": "Vx", "dose": 30, "volume": 1, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "V30Gy <= 1 cc", "notes": ""},
+                  {"roi": "Small Bowel", "goalType": "Vx", "dose": 18.1, "volume": 5, "volumeUnits": "cc", "operator": "LESSTHAN", "priority": "optimal", "goal_str": "V18.1Gy < 5 cc", "notes": ""},
+                  {"roi": "Urethra", "goalType": "Vx", "dose": 42, "volume": 50, "volumeUnits": "%", "operator": "LESSTHAN", "priority": "optimal", "goal_str": "V42Gy < 50%", "notes": ""}
+                ]
+              },
+              {
+                "name": "ASTRO 2025 - Rectal SBRT 5fx",
+                "doi": "10.1016/j.prro.2025.11.003",
+                "goals": [
+                  {"roi": "Bladder", "goalType": "Vx", "dose": 25, "volume": 20, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "V25Gy <= 20%", "notes": "Short Course Rectal"},
+                  {"roi": "Bladder", "goalType": "Vx", "dose": 15, "volume": 50, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "V15Gy <= 50%", "notes": "Short Course Rectal"},
+                  {"roi": "Bladder", "goalType": "Dmean", "dose": 20, "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "Dmean <= 20 Gy", "notes": "Short Course Rectal"},
+                  {"roi": "Bowel", "goalType": "Dx", "dose": 26.5, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D0.03cc <= 26.5 Gy", "notes": "Short Course Rectal. Loops"},
+                  {"roi": "Bowel", "goalType": "Dx", "dose": 28.75, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.03cc <= 28.75 Gy", "notes": "Short Course Rectal. Loops"},
+                  {"roi": "Bowel", "goalType": "Vx", "dose": 20, "volume": 50, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "V20Gy < 50 cc", "notes": "Short Course Rectal. Loops"},
+                  {"roi": "Femoral Head", "goalType": "Dx", "dose": 25, "volume": 5, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D5% <= 25 Gy", "notes": "Short Course Rectal"},
+                  {"roi": "Small Bowel", "goalType": "Dx", "dose": 26.5, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D0.03cc <= 26.5 Gy", "notes": "Short Course Rectal. Bag"},
+                  {"roi": "Small Bowel", "goalType": "Dx", "dose": 28.75, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.03cc <= 28.75 Gy", "notes": "Short Course Rectal. Bag"},
+                  {"roi": "Small Bowel", "goalType": "Vx", "dose": 20, "volume": 200, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "V20Gy <= 200 cc", "notes": "Short Course Rectal. Bag"}
+                ]
               }
             ]
           },
-          "8": {
+          "8":           {
             "clinicalGoalSets": [
               {
                 "name": "CORSAIR - 8 Fractions - Pelvis",
@@ -3283,7 +3851,7 @@
               }
             ]
           },
-          "10": {
+          "10":           {
             "clinicalGoalSets": [
               {
                 "name": "Timmerman Tables - 10 Fractions - Pelvis",
@@ -3317,7 +3885,7 @@
               }
             ]
           },
-          "15": {
+          "15":           {
             "clinicalGoalSets": [
               {
                 "name": "Timmerman Tables - 15 Fractions - Pelvis",
@@ -3351,7 +3919,7 @@
               }
             ]
           },
-          "20": {
+          "20":           {
             "clinicalGoalSets": [
               {
                 "name": "Timmerman Tables - 20 Fractions - Pelvis",
@@ -3424,6 +3992,55 @@
                   {"roi": "Sigmoid, Small & Large Bowel", "goalType": "Vx", "dose": 52.7, "volume": 0, "volumeUnits": "cc", "operator": "LESSTHAN", "useEQD2": false, "priority": "mandatory", "goal_str": "V52.7Gy < 0 cc", "notes": ""},
                   {"roi": "Urethra", "goalType": "Dx", "dose": 62.4, "volume": 2, "volumeUnits": "%", "operator": "LESSTHAN", "useEQD2": false, "priority": "optimal", "goal_str": "D2% < 62.4 Gy", "notes": ""},
                   {"roi": "Urethra", "goalType": "Dx", "dose": 67.3, "volume": 2, "volumeUnits": "%", "operator": "LESSTHAN", "useEQD2": false, "priority": "mandatory", "goal_str": "D2% < 67.3 Gy", "notes": ""}
+                ]
+              },
+              {
+                "name": "ASTRO 2025 - Prostate (Mod Hypo 20fx)",
+                "doi": "10.1016/j.prro.2025.11.003",
+                "goals": [
+                  {"roi": "Bladder", "goalType": "Vx", "dose": 60, "volume": 5, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "V60Gy <= 5%", "notes": ""},
+                  {"roi": "Bladder", "goalType": "Vx", "dose": 60, "volume": 15, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "V60Gy <= 15%", "notes": ""},
+                  {"roi": "Bladder", "goalType": "Vx", "dose": 48, "volume": 25, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "V48Gy <= 25%", "notes": ""},
+                  {"roi": "Bladder", "goalType": "Vx", "dose": 40, "volume": 50, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "V40Gy <= 50%", "notes": ""},
+                  {"roi": "Femoral Head", "goalType": "Vx", "dose": 40, "volume": 5, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "V40Gy <= 5%", "notes": ""},
+                  {"roi": "Femoral Head", "goalType": "Vx", "dose": 40, "volume": 50, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "V40Gy <= 50%", "notes": ""},
+                  {"roi": "Large Bowel", "goalType": "Dx", "dose": 50, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.03cc <= 50 Gy", "notes": ""},
+                  {"roi": "Penile Bulb", "goalType": "Vx", "dose": 48, "volume": 10, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "V48Gy <= 10%", "notes": ""},
+                  {"roi": "Rectum", "goalType": "Vx", "dose": 60, "volume": 0.01, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "V60Gy <= 0.01%", "notes": ""},
+                  {"roi": "Rectum", "goalType": "Vx", "dose": 60, "volume": 8, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "V60Gy <= 8%", "notes": ""},
+                  {"roi": "Rectum", "goalType": "Vx", "dose": 50, "volume": 22, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "V50Gy <= 22%", "notes": ""},
+                  {"roi": "Rectum", "goalType": "Vx", "dose": 30, "volume": 57, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "V30Gy <= 57%", "notes": ""},
+                  {"roi": "Small Bowel", "goalType": "Dx", "dose": 50, "volume": 0.03, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.03cc <= 50 Gy", "notes": ""},
+                  {"roi": "Small Bowel", "goalType": "Vx", "dose": 40, "volume": 17, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "V40Gy <= 17 cc", "notes": ""},
+                  {"roi": "Small Bowel", "goalType": "Vx", "dose": 40, "volume": 195, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "V40Gy <= 195 cc", "notes": ""}
+                ]
+              }
+            ]
+          },
+          "28":           {
+            "clinicalGoalSets": [
+              {
+                "name": "ASTRO 2025 - Prostate (Mod Hypo 28fx)",
+                "doi": "10.1016/j.prro.2025.11.003",
+                "goals": [
+                  {"roi": "Bladder", "goalType": "Vx", "dose": 70, "volume": 10, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "V70Gy <= 10%", "notes": ""},
+                  {"roi": "Bladder", "goalType": "Vx", "dose": 70, "volume": 15, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "V70Gy <= 15%", "notes": ""},
+                  {"roi": "Bladder", "goalType": "Vx", "dose": 65, "volume": 15, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "V65Gy <= 15%", "notes": ""},
+                  {"roi": "Bladder", "goalType": "Vx", "dose": 65, "volume": 25, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "V65Gy < 25%", "notes": ""},
+                  {"roi": "Bladder", "goalType": "Vx", "dose": 40, "volume": 35, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "V40Gy <= 35%", "notes": ""},
+                  {"roi": "Bladder", "goalType": "Vx", "dose": 40, "volume": 65, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "V40Gy < 65%", "notes": ""},
+                  {"roi": "Femoral Head", "goalType": "Vx", "dose": 40, "volume": 0, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "V40Gy <= 0%", "notes": ""},
+                  {"roi": "Large Bowel", "goalType": "Dx", "dose": 55, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D0.035cc <= 55 Gy", "notes": ""},
+                  {"roi": "Large Bowel", "goalType": "Dx", "dose": 60, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.035cc <= 60 Gy", "notes": ""},
+                  {"roi": "Large Bowel", "goalType": "Vx", "dose": 50, "volume": 1, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "V50Gy <= 1%", "notes": ""},
+                  {"roi": "Penile Bulb", "goalType": "Dmean", "dose": 50, "operator": "LESSTHAN", "priority": "optimal", "goal_str": "Dmean < 50 Gy", "notes": ""},
+                  {"roi": "Rectum", "goalType": "Vx", "dose": 70, "volume": 5, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "V70Gy <= 5%", "notes": ""},
+                  {"roi": "Rectum", "goalType": "Vx", "dose": 70, "volume": 10, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "V70Gy <= 10%", "notes": ""},
+                  {"roi": "Rectum", "goalType": "Vx", "dose": 65, "volume": 10, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "V65Gy <= 10%", "notes": ""},
+                  {"roi": "Rectum", "goalType": "Vx", "dose": 40, "volume": 35, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "V40Gy <= 35%", "notes": ""},
+                  {"roi": "Small Bowel", "goalType": "Dx", "dose": 52.5, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "D0.035cc <= 52.5 Gy", "notes": ""},
+                  {"roi": "Small Bowel", "goalType": "Dx", "dose": 54, "volume": 0.035, "volumeUnits": "cc", "operator": "LESSTHANOREQUALTO", "priority": "mandatory", "goal_str": "D0.035cc <= 54 Gy", "notes": ""},
+                  {"roi": "Small Bowel", "goalType": "Vx", "dose": 40, "volume": 1, "volumeUnits": "%", "operator": "LESSTHANOREQUALTO", "priority": "optimal", "goal_str": "V40Gy <= 1%", "notes": ""}
                 ]
               }
             ]

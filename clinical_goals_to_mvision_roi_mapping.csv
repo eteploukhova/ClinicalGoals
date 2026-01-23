@@ -1,0 +1,174 @@
+Clinical_Goals_ROI,MVision_ROI
+Anal Canal,Canal_Anal
+Anterior Descending Artery,A_LAD
+Bile Duct,NO_MAPPING
+Bladder,Bladder
+Bladder (suprapubic wall),Bladder
+Bladder (with urine),Bladder
+Bladder wall,Bladder
+Bone Mandible,Bone_Mandible
+Bowel,Loops_Bowel
+Bowel Large,Bowel_Large
+Bowel Small,Bowel_Small
+Bowel Space,Bag_Bowel
+Brachial Plexus,BrachialPlex_L
+Brachial Plexus,BrachialPlex_R
+Brain,Brain
+Brain PRV,PRV_Brain
+Brainstem,Brainstem
+Brainstem PRV,PRV_Brainstem
+Brainstem (not medulla),Brainstem & ~MedullaOblongata
+Breast, Breast_L
+Breast, Breast_R
+"Bronchus, smaller airways",Bronchus_Prox
+Carotid Artery,A_Carotid_L
+Carotid Artery,A_Carotid_R
+Cauda Equina,SpinalCanal
+Chestwall,Chestwall_L
+Chestwall,Chestwall_R
+Cochlea,Cochlea_L
+Cochlea,Cochlea_R
+Colon,Colon_Sigmoid
+Cricopharyngeal Inlet,Cricophar_inlet
+Cricopharyngeal Muscle,Cricophar_inlet
+Duodenum,Duodenum
+Esophageal Inlet,Esophagus_S
+Esophagus,Esophagus
+Esophagus Superior,Esophagus_S
+Eye,Eye_L
+Eye,Eye_R
+Eye Anterior,Eye_Ant_L
+Eye Anterior,Eye_Ant_R
+Eye Anterior Cornea,Cornea_L
+Eye Anterior Cornea,Cornea_R
+Eye Anterior Lens,Lens_L
+Eye Anterior Lens,Lens_R
+Eye Macula,Retina_L
+Eye Macula,Retina_R
+Eye Posterior,Eye_Post_L
+Eye Posterior,Eye_Post_R
+Eye Posterior Retina,Retina_L
+Eye Posterior Retina,Retina_R
+Eye Retina,Retina_L
+Eye Retina,Retina_R
+"Eyelid, meibomian glands",NO_MAPPING
+Femoral Head-Neck,Femur_Head_L
+Femoral Head-Neck,Femur_Head_R
+Femoral Head,Femur_Head_L
+Femoral Head,Femur_Head_R
+Femoral Head,FemuralHead_L
+Femoral Head,FemuralHead_R
+Femoral Heads,Femur_Head_L | Femur_Head_R
+Femoral Heads,FemuralHead_L | FemuralHead_R
+Genitals,NO_MAPPING
+Glottis,Glottis
+Great Vessels,A_Aorta
+Great Vessels,V_Venacava_S
+Great Vessels,V_Venacava_I
+Heart,Heart
+Heart and Pulmonary Artery,Heart | A_Pulm
+Heart/pericardium,Heart
+Hippocampus,Hippocampus_L | Hippocampus_R
+Inner Ear PRV,NO_MAPPING
+Jejunum/ileum,Bowel_Small
+Kidney Cortex,Kidney_L
+Kidney Cortex,Kidney_R
+Kidney Cortex (combined),Kidney_L | Kidney_R
+Kidneys,Kidney_L | Kidney_R
+Lacrimal Gland,Glnd_Lacrimal_L
+Lacrimal Gland,Glnd_Lacrimal_R
+Larynx,Larynx_SG
+Larynx,Glottis
+Lens,Lens_L
+Lens,Lens_R
+Lips,Lips
+Liver,Liver & ~GTV
+LN_Sclav,LN_Neck_II_L
+LN_Sclav,LN_Neck_II_R
+LN_Ax,LN_Axillary_L
+LN_Ax,LN_Axillary_R
+LN_IMN,LN_IMN_L
+LN_IMN,LN_IMN_R
+Lumbo-sacral Plexus,NO_MAPPING
+Lung,Lung_L & ~GTV
+Lung,Lung_R & ~GTV
+Lungs,Lung_L | Lung_R & ~GTV
+Optic Chiasm,OpticChiasm
+Optic Nerve,OpticNrv_L
+Optic Nerve,OpticNrv_R
+Optic Nerve PRV,PRV_OpticNrv_L
+Optic Nerve PRV,PRV_OpticNrv_R
+Optic Pathway,OpticChiasm | OpticNrv_R | OpticNrv_L | OpticTract_L | OpticTract_R
+Oral Cavity,Cavity_Oral
+Ovaries,NO_MAPPING
+Pancreas,Pancreas
+Parotid Gland,Parotid_L
+Parotid Gland,Parotid_R
+Parotid Glands,Parotid_L | Parotid_R
+Penile Bulb,PenileBulb
+Peripheral (named) nerve,NO_MAPPING
+Pharyngeal constrictor muscle Middle,Musc_Constrict
+Pharyngeal constrictor muscle Superior,Musc_Constrict
+Pharyngeal constrictor muscles,Musc_Constrict
+Pharyngeal constrictor muscles Inferior,Musc_Constrict
+Pituitary Fossa,Fossa_Pituitary
+Pituitary Gland,Pituitary
+Prostatic Urethra,Urethra_Prostate
+Proximal Bronchus,Bronchus_Prox
+Rectum,Rectum
+Rectum (including stool),Rectum
+Renal cortex (right and left),Kidney_L | Kidney_R
+Renal hilum/vascular trunk,Kidney_L
+Renal hilum/vascular trunk,Kidney_R
+Retina,Retina_L
+Retina,Retina_R
+Rib,Rib01_L
+Rib,Rib01_R
+Rib,Rib02_L
+Rib,Rib02_R
+Rib,Rib03_L
+Rib,Rib03_R
+Rib,Rib04_L
+Rib,Rib04_R
+Rib,Rib05_L
+Rib,Rib05_R
+Rib,Rib06_L
+Rib,Rib06_R
+Rib,Rib07_L
+Rib,Rib07_R
+Rib,Rib08_L
+Rib,Rib08_R
+Rib,Rib09_L
+Rib,Rib09_R
+Rib,Rib10_L
+Rib,Rib10_R
+Rib,Rib11_L
+Rib,Rib11_R
+Rib,Rib12_L
+Rib,Rib12_R
+Ribs,Rib01_L | Rib02_L | Rib03_L | Rib04_L | Rib05_L | Rib06_L | Rib07_L | Rib08_L | Rib09_L | Rib10_L | Rib11_L | Rib12_L | Rib01_R | Rib02_R | Rib03_R | Rib04_R | Rib05_R | Rib06_R | Rib07_R | Rib08_R | Rib09_R | Rib10_R | Rib11_R | Rib12_R
+Sacral Plexus,NO_MAPPING
+Salivary Gland,Parotid_L
+Salivary Gland,Parotid_R
+Salivary Gland,Glnd_Submand_L
+Salivary Gland,Glnd_Submand_R
+Sigmoid Colon,Colon_Sigmoid
+Skin,NO_MAPPING
+Spinal Canal,SpinalCanal
+Spinal Cord,SpinalCord
+Spinal Cord and medulla,SpinalCord | MedullaOblongata
+Spinal Cord PRV,PRV_SpinalCord
+Spleen,Spleen
+Stomach,Stomach
+Submandibular Gland,Glnd_Submand_L
+Submandibular Gland,Glnd_Submand_R
+Supraglottic Larynx,Larynx_SG
+TM joint,NO_MAPPING
+Temporal Lobe,NO_MAPPING
+Testis,NO_MAPPING
+Thyroid Gland,Glnd_Thyroid
+Trachea,Trachea
+Trachea and large bronchus,Trachea | Bronchus_Prox
+Ureters,NO_MAPPING
+Urethra,Urethra
+Vagina,Vagina
