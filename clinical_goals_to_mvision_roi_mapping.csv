@@ -4,7 +4,6 @@ Anterior Descending Artery,A_LAD
 Bile Duct,NO_MAPPING
 Bladder,Bladder
 Bladder (suprapubic wall),Bladder
-Bladder (with urine),Bladder
 Bladder wall,Bladder
 Bone Mandible,Bone_Mandible
 Bowel,Loops_Bowel
@@ -47,19 +46,15 @@ Eye Macula,Retina_L
 Eye Macula,Retina_R
 Eye Posterior,Eye_Post_L
 Eye Posterior,Eye_Post_R
-Eye Posterior Retina,Retina_L
-Eye Posterior Retina,Retina_R
 Eye Retina,Retina_L
 Eye Retina,Retina_R
 "Eyelid, meibomian glands",NO_MAPPING
-Femoral Head-Neck,Femur_Head_L
-Femoral Head-Neck,Femur_Head_R
-Femoral Head,Femur_Head_L
-Femoral Head,Femur_Head_R
-Femoral Head,FemuralHead_L
-Femoral Head,FemuralHead_R
-Femoral Heads,Femur_Head_L | Femur_Head_R
-Femoral Heads,FemuralHead_L | FemuralHead_R
+Femur Head,Femur_Head_L
+Femur Head,Femur_Head_R
+Femur Head,FemuralHead_L
+Femur Head,FemuralHead_R
+Femur Heads,Femur_Head_L | Femur_Head_R
+Femur Heads,FemuralHead_L | FemuralHead_R
 Genitals,NO_MAPPING
 Glottis,Glottis
 Great Vessels,A_Aorta
